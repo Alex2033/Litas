@@ -1,0 +1,295 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu
+
+      include ../modules/request
+
+      // begin main-content
+      main.main-content
+
+        // begin hero 
+        section.hero.section
+            .hero__container
+              button.hero-arrow.hero__arrow--left
+                img(src="img/main-hero/left-arrow.png", alt="Left arrow")
+              .hero__slider
+                  .hero__item(style="background-image: url(img/main-hero/slide.jpg);")
+                  .hero__item(style="background-image: url(img/main-hero/slide.jpg);")
+                  .hero__item(style="background-image: url(img/main-hero/slide.jpg);")
+              .hero-arrow.hero__arrow--right
+                img(src="img/main-hero/right-arrow.png", alt="Left arrow")
+        // end hero 
+
+        // begin production 
+        section.production.section
+          header.heading
+            .heading__line
+            h2.h2 Продукция
+            .heading__line
+
+          .production__container
+            // begin products
+            ul.products
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/1.png", alt="Production image")
+                  span.products__text Плакаты
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/2.png", alt="Production image")
+                  span.products__text Листовки
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/3.png", alt="Production image")
+                  span.products__text Буклеты
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/4.png", alt="Production image")
+                  span.products__text Брошюры
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/5.png", alt="Production image")
+                  span.products__text Блокноты
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/6.png", alt="Production image")
+                  span.products__text Календари
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/7.png", alt="Production image")
+                  span.products__text Папки
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/8.png", alt="Production image")
+                  span.products__text Упаковка
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/9.png", alt="Production image")
+                  span.products__text
+                    span.products__text-line Хедеры,
+                    span.products__text-line Шелфтокеры, Воблеры
+              li.products__item
+                a.products__link.item-hover(href="#")
+                  span.products__img
+                    img(src="img/production/10.png", alt="Production image")
+                  span.products__text Печать на конвертах
+            // end products 
+        // end production 
+
+        // begin news
+        section.news.section
+          header.heading
+            .heading__line
+            h2.h2 Новости и акции
+            .heading__line
+
+          .news__container
+            // begin discounts 
+            .discounts
+              .discounts__left
+                a(href="#").discounts__item.discounts__item--big
+                  .discounts__link.discounts__link--big(style="background-image: url(img/news/big.jpg);")
+                  .discounts__panel.discounts__panel--big
+                    h6.discounts__title.discounts__title--margin Скидка 10%
+                    .discounts__text
+                      p.
+                        Только до 11 янвая скидка 10% на печать брошюр и листовок
+              .discounts__right
+                a(href="#").discounts__item.discounts__item--small
+                  .discounts__link.discounts__link--small(style="background-image: url(img/news/small-1.jpg);")
+                  .discounts__panel
+                    h6.discounts__title Скидки и блокноты
+                a(href="#").discounts__item.discounts__item--small
+                  .discounts__link.discounts__link--small(style="background-image: url(img/news/small-2.jpg);")
+                  .discounts__panel
+                    h6.discounts__title Новая услуга - тиснение
+            // end discounts 
+        // end news 
+
+        // begin features 
+        section.features.section
+          header.heading
+            .heading__line
+            h2.h2 Наши преимущества
+            .heading__line
+
+          .features__container
+            ul.features__list
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/1.png", alt="Features Image")
+                h2.features__title Без посредников
+                .features__text
+                  p.
+                    Продукция изготавливается на собственном производстве, мы не передаем Ваши заказы в субподряд
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/2.png", alt="Features Image")
+                h2.features__title Отличная цена
+                .features__text
+                  p.
+                    Продукция высокого качества по приемлемой цене. Постоянным клиентам скидки и отсрочки платежей
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/3.png", alt="Features Image")
+                h2.features__title Транспортная и пешая доступность
+                .features__text
+                  p.
+                    Рядом съезд с ЗСД, 15 минут пешком от м. Нарвская, 10 минут на общественном транспорте от  м. Балтийская
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/4.png", alt="Features Image")
+                h2.features__title Гарантированные сроки
+                .features__text
+                  p.
+                    Мы не берем заказ в работу, если не готовы выполнить его в оговоренный срок
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/5.png", alt="Features Image")
+                h2.features__title Доставка
+                .features__text
+                  p.
+                    Доставка тиражей в пределах СПб. От вас потребуется только указать удобную дату и адрес доставки
+              li.features__item.item-hover
+                .features__img
+                  img(src="img/features/6.png", alt="Features Image")
+                h2.features__title Опыт
+                .features__text
+                  p.
+                    Более 20 лет на рынке полиграфии, большинство сотрудников более 10лет работают в типографии, многие с основания типографии
+        // end features 
+
+        // begin order 
+        section.order.section
+          header.heading
+            .heading__line
+            h2.h2 Как заказать
+            .heading__line
+
+          .order__container
+            // begin orders 
+            .orders
+              .orders__step.orders__step--big
+                .orders__item.item-hover
+                  .orders__number 1
+                  img(src="img/order/1.png").orders__img
+                .orders__text
+                  p Вы присылаете заявку на расчет
+              .orders__step.orders__step--big
+                .orders__item.item-hover
+                  .orders__number 2
+                  img(src="img/order/2.png").orders__img
+                .orders__text
+                  p Мы составляем смету, предлагая Вам варианты решений
+              .orders__step.orders__step--big
+                .orders__item.item-hover
+                  .orders__number 3
+                  img(src="img/order/3.png").orders__img
+                .orders__text
+                  p Вы утверждаете один из вариантов решений
+
+              .orders__step
+                .orders__item.item-hover
+                  .orders__number 4
+                  img(src="img/order/4.png").orders__img
+                .orders__text
+                  p Вы присылаете оригинал макет в печать
+              .orders__step
+                .orders__item.item-hover
+                  .orders__number 5
+                  img(src="img/order/5.png").orders__img
+                .orders__text
+                  p Вы оплачиваете заказ и утверждаете оригинал макет в печать 
+              .orders__step
+                .orders__item.item-hover
+                  .orders__number 6
+                  img(src="img/order/6.png").orders__img
+                .orders__text
+                  p Мы изготавливаем заказ в установленный срок 
+              .orders__step
+                .orders__item.item-hover
+                  .orders__number 7
+                  img(src="img/order/7.png").orders__img
+                .orders__text
+                  p Мы доставляем Вам заказ или Вы забираете его самостоятельно
+
+            // end orders 
+
+            .order__button
+              a(href="#").order-btn.button.button--purple Оформить заказ
+
+        // end order 
+
+        // begin clients
+        section.clients.section
+          header.heading
+              .heading__line
+              h2.h2 Нам доверяют
+              .heading__line
+
+          .clients__container
+            ul.clients__slider
+              li.clients__item
+                img.clients__img(src="img/clients/1.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/2.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/3.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/4.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/5.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/1.png", alt="Clients images")
+              li.clients__item
+                img.clients__img(src="img/clients/2.png", alt="Clients images")
+
+        // end clients 
+
+        // begin map
+        #map.map
+          .map__info
+            .map__info-left
+              .map__info-text
+                .map__info-line Санкт-Петербург
+                .map__info-line ул. Лифляндская, д. 3
+              .map__info-metro
+                img(src="img/map/metro.png", alt="Metro icon").map__info-icon
+                |  Нарвская
+            .map__info-right
+              img(src="img/map/marker.png", alt="Metro icon").map__info-img
+        // end map 
+
+      // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+

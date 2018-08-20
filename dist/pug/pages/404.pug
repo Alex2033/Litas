@@ -1,0 +1,172 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        //- include ../modules/request
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+        // end sidebar-menu  
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .site-map__inner
+          .wrapper__container
+
+            include ../modules/sidebar       
+
+            // begin main-content
+            main.error-page.inner-content
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html")
+              // end breadcrumbds
+
+              header.heading
+                .heading__line
+                h2.h2 Страница не найдена
+                .heading__line
+
+              img.error-page__img(src="img/404/404.png", alt="404 image")
+
+              header.heading.site-map__heading
+                .heading__line
+                h1.h2 Карта сайта
+                .heading__line
+
+              .site-map__wrapper.error-page__wrapper
+
+                h2.site-map__title Главная страница
+
+                // begin map-list 
+                ul.map-list.error-page__list
+                  li.map-list__item.print-services
+                    a.map-list__link(href="#") Услуги типографии
+                    // begin map-dropdown 
+                    ul.map-dropdown
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Офсетная печать
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Брошюровка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Фальцовка, биговка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Вырубка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Ламинация
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Кашировка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Склейка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Термоусадка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Сверление отверстий
+                    // end map-dropdown 
+                  li.map-list__item.prod-value
+                    a.map-list__link(href="#") Стоимость продукции
+                    // begin map-dropdown 
+                    ul.map-dropdown
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Плакаты
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Листовки, бланки
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Буклеты
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Брошюры
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Блокноты
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Календари
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Упаковка
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Упаковка для дисков
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Хедеры
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Шелфтокеры
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Воблеры
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") Печать на конвертах
+                    // end map-dropdown 
+                  li.map-list__item.ab-printing
+                    a.map-list__link(href="#") О типографии
+                    // begin map-dropdown 
+                    ul.map-dropdown
+                      li.map-dropdown__item
+                        a.map-dropdown__link(href="#") FAQ
+                    // end map-dropdown 
+                  li.map-list__item.nw-shares
+                    a.map-list__link(href="#") Новости, акции
+                  li.map-list__item.cnt
+                    a.map-list__link(href="#") Контакты
+                // end map-list 
+
+  
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

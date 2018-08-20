@@ -1,0 +1,103 @@
+.news-inner
+    padding-bottom: 40px
+
+.news--padding
+    padding: 0 22px
+
+.news__item
+    display: block
+
+.news__img
+    display: block
+    height: 0
+    padding-bottom: 60%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 8px
+
+.news__img--single
+    margin-bottom: 25px
+    padding-bottom: 37.6%
+
+.news__title
+    font-size: 16px
+    font-family: $montserrat-b
+    margin-bottom: 10px
+    color: $color-main
+
+.news__date, .news__link
+    color: $accent
+    font-size: 14px
+    flex-grow: 1
+    display: block
+
+.news__link
+    text-decoration: underline
+    text-align: right
+
+    &:hover
+        text-decoration: none
+
+.news__text
+    p
+        color: $color-main
+        margin-top: 30px
+        margin-bottom: 30px
+
+.backward-link
+    color: $blue-dark
+    position: relative
+    display: block
+    padding-left: 15px
+    font-size: 18px
+    text-decoration: underline
+
+    &::before 
+        content: '<'
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
+.news__wrapper
+    +row-flex()
+    margin-bottom: 35px
+
+.news__left,
+.news__right
+    +col(6)
+
+.news__body
+    padding: 0 8px
+    display: block
+
+.news__footer
+    +row-flex()
+    align-items: center
+
+.news__item-right
+    display: flex
+    background-color: #fbfbfb
+    padding: 12px 14px 10px 8px
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    transition: border-color .15s ease, background-color .15s ease
+
+    &:hover
+        background-color: lighten($accent, 34.3%)
+        border-color: $accent
+
+.news__img-right
+    height: 142px
+    padding-bottom: 0
+    min-width: 175px
+    margin-bottom: 0
+
+.news__title-right
+    font-size: 12px
+
+.news__text-right
+    p
+        margin: 5px 0 20px 0
+        font-size: 11px

@@ -1,0 +1,20 @@
+.breadcrumbs
+    display: flex
+    flex-wrap: wrap
+    padding-left: 40px
+    margin-bottom: 18px
+
+.breadcrumbs__item
+    position: relative
+
+    &:not(:last-child)
+        &::after
+            content: '-'
+            padding: 0 3px
+
+.breadcrumbs__link
+    text-decoration: underline
+    color: #888888
+    font-size: 13px
+    display: inline-block
+    position: relative

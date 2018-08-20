@@ -1,0 +1,148 @@
+// begin request
+.request
+    .request__background
+
+    // begin order-form
+    form.order-form.request__form
+        button(type="button").exit-btn
+            img(src="img/request-form/exit.png", alt="Exit image")
+        .heading.order-form__heading
+            .heading__line
+            h2.h2 Отправить запрос
+            .heading__line
+        .order-form__top
+            .order-form__top-left
+                label.order-form__label(for="name") Ваше Имя*:
+                input.order-form__item(type="text" name="name" required id="name")
+                label.order-form__label(for="email") Ваш E-mail*:
+                input.order-form__item(type="email" name="email" required id="email")
+                label.order-form__label(for="phone") Ваш Телефон*:
+                input.order-form__item(type="text" name="phone" required id="phone")
+            .order-form__top-right
+                label.order-form__label(for="message") Текст сообщения*:
+                textarea.order-form__textarea.order-form__item(name="message" id="message" required)
+                label.order-form__label(for="file") Загрузить файл*:
+                input.order-form__item.inputfile(type="file" name="file" required id="file")
+                label(for="file").inputfile-label.order-form__item
+                    i.fa.fa-upload
+                    span.inputfile-label__text Выберите файл
+            // begin footnote 
+            .footnote.
+                * - поля обязательные к заполнению
+            // end footnote 
+
+        .heading.order-form__heading
+            .heading__line
+            h2.h2 Примечания к запросу
+            .heading__line
+
+        .order-form__bottom
+            // begin accordions 
+            .accordions
+                .accordions__item
+                    button(type="button").accordions__button
+                        i.fa.fa-angle-right
+                        span.accordions__span Общие
+                    .accordions__content
+                        label.order-form__label(for="order-details") Особые детали заказа (Формат, Тираж и т.п.):
+                        textarea#order-details(name="order-details").order-form__item.accordions__textarea
+                .accordions__item
+                    button(type="button").accordions__button
+                        i.fa.fa-angle-right
+                        span.accordions__span Для листовок, буклетов, плакатов
+                    .accordions__content
+
+                        // begin leaflets 
+                        .leaflets
+                            .leaflets__left
+                                label.order-form__label Формат:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Тираж:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Цветность печати:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+
+                            .leaflets__right   
+                                label.order-form__label Материал:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                    option Картон
+                                    option Бумага
+                                label.order-form__label Постпечатная обработка:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                
+                                label.order-form__label Доп. Отделка:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                    option Ламинация
+                                    option УФ лак
+                        // end leaflets 
+
+                .accordions__item
+                    button(type="button").accordions__button
+                        i.fa.fa-angle-right
+                        span.accordions__span Для брошюр
+                    .accordions__content.brochures--hidden
+
+                        // begin brochures 
+                        .brochures
+                            .brochures__left
+                                label.order-form__label Формат:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Тираж:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Кол-во страниц (полос):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Цветность печати (Обложка):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Цветность печати (Внутри):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+
+                            .brochures__right
+                                label.order-form__label Материал (Обложка):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Материал (Внутри):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                    option Картон
+                                    option Бумага
+                                label.order-form__label Способ Брошюровки:
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Доп. Отделка(Обложка):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                label.order-form__label Доп. Отделка(Внутри):
+                                select.order-form__select.order-form__item
+                                    option Не выбрано
+                                    option Офсетный лак
+                                    option УФ лак
+                                    option Другое
+                        // end brochures 
+                        
+            // end accordions
+
+            // begin footnote 
+            .footnote
+                .checkbox-container
+                    input(type="checkbox" required).order-form__checkbox
+                    span.checkmark
+                .footnote__text Я согласен с условиями политики конфиденциальности
+                    a(href="#").footnote__link Подробнее
+            // end footnote
+
+        .order-form__btn
+            button(type="submit").button.button--purple Отправить запрос 
+
+    // end order-form
+// end request

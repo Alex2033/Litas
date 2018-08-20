@@ -1,0 +1,30 @@
+.features__container
+    @extend %container
+
+
+.features__list
+    +row-flex()
+    margin-bottom: -20px
+
+.features__item
+    +col(4)
+    background-color: $light
+    text-align: center
+    padding: 65px 45px 40px
+    margin-bottom: 20px
+
+.features__img
+    height: 80px
+    width: 80px
+    margin: 0 auto 50px
+    display: flex
+    flex-direction: column
+
+    img
+        margin: auto auto 0
+
+.features__title
+    margin-bottom: 15px
+    text-transform: uppercase
+    font-family: $montserrat-b
+    font-size: 16px

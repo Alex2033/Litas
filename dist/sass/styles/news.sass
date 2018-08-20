@@ -1,0 +1,65 @@
+.news__container
+    @extend %container
+
+.discounts
+    +row-flex()
+    align-items: stretch
+
+.discounts__left
+    +col(7)
+
+.discounts__right
+    +col(5)
+    display: flex
+    flex-direction: column
+    margin-bottom: -20px
+    flex-wrap: wrap
+
+.discounts__item
+    position: relative
+    display: block
+
+.discounts__link
+    height: 100%
+    display: block
+    position: relative
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+
+.discounts__link--big,
+.discounts__item--big
+    height: 100%
+
+.discounts__link--small
+    min-height: 225px
+
+.discounts__item--small
+    margin-bottom: 20px
+
+.discounts__panel
+    display: block
+    max-width: 340px
+    position: absolute
+    bottom: 10px
+    left: 15px
+    padding: 10px 16px
+    box-shadow: 2px 1px 8px rgba(153, 153, 153, 0.5)
+    background-color: $light
+
+.discounts__panel--big
+    padding: 19px 18px
+    max-width: 340px
+    width: 100%
+
+.discounts__title
+    font-size: 18px
+    font-family: $gotham-b
+    color: $dark
+
+.discounts__title--margin
+    margin-bottom: 15px
+
+.discounts__text
+    max-width: 255px
+    color: $color-main

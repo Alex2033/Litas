@@ -1,0 +1,212 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.contacts-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="contacts.html") Контакты
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Контакты
+                .heading__line
+
+              // begin contacts 
+              section.contacts
+
+                .contacts__info
+                  .contacts__info-left
+                    .contacts__info-item
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/marker.png", alt="Marker icon")
+                        .contacts__info-text
+                          | Санкт-Петербург, ул.
+                          br
+                          |  Лифляндская, д. 3
+
+                    .contacts__info-item.contacts__phones
+
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/phone.png", alt="phone icon")
+                        .contacts__info-text
+                          | Тел/факс:
+                          strong
+                            a(href="tel:+78123255134").contacts__info-link +7 (812) 325-51-34
+
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/clock.png", alt="clock icon")
+                        .contacts__info-text
+                          | Пн-пт 
+                          strong 10:00-18:00
+
+                  .contacts__info-right
+                    .contacts__info-item.contacts__links
+
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/phone.png", alt="phone icon")
+                        a(href="www.vk.com/club3895721").contacts__info-link www.vk.com/
+                          b club3895721
+
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/insta.png", alt="insta icon")
+                        a(href="www.instagram.com/litas.plus/").contacts__info-link www.instagram.com/
+                          b litas.plus/
+
+                      .contacts__info-line
+                        .contacts__info-img
+                          img(src="img/contacts-page/facebook.png", alt="facebook icon")
+                        a(href="www.facebook.com/litas.plus").contacts__info-link www.facebook.com/
+                          b litas.plus
+
+                // begin finding 
+                .finding
+                  .finding__heading
+                    h2.finding__title Как нас найти
+
+                  .finding__set
+                    .finding__item(style="background-image: url(img/contacts-page/1.jpg);")
+                    .finding__item(style="background-image: url(img/contacts-page/2.jpg);")
+                    .finding__item.finding__item--big(style="background-image: url(img/contacts-page/3.jpg);")
+                    .finding__item(style="background-image: url(img/contacts-page/4.jpg);")
+                    .finding__item(style="background-image: url(img/contacts-page/5.jpg);")
+
+                    .finding__item.finding__map
+                      // begin map
+                      #map.map
+                        .map__info
+                          .map__info-left
+                            .map__info-text
+                              .map__info-line Санкт-Петербург
+                              .map__info-line ул. Лифляндская, д. 3
+                            .map__info-metro
+                              img(src="img/map/metro.png", alt="Metro icon").map__info-icon
+                              |  Нарвская
+                          .map__info-right
+                            img(src="img/map/marker.png", alt="Metro icon").map__info-img
+                      // end map 
+
+                    .finding__item.finding__form
+                      // begin order-form
+                      form.order-form.finding__form-wrapper
+                        .finding__form-main
+                          .heading.finding__form-heading
+                            h2.h2.finding__form-title Заказ звонка
+                          label.order-form__label(for="finding-name") Ваше Имя*:
+                          input.order-form__item(type="text" name="name" required id="finding-name")
+                          label.order-form__label(for="finding-phone") Ваш Телефон*:
+                          input.order-form__item(type="text" name="phone" required id="finding-phone")
+                          label.order-form__label(for="finding-message") Текст сообщения*:
+                          textarea.order-form__textarea.order-form__item.finding__textarea(name="message" id="finding-message" required)
+
+                          // begin footnote 
+                          .footnote.finding__footnote.
+                              * - поля обязательные к заполнению
+                          // end footnote 
+
+                        // begin footnote 
+                        .footnote.finding__footnote
+                            .checkbox-container
+                                input(type="checkbox" required).order-form__checkbox
+                                span.checkmark.finding__checkmark
+                            .footnote__text Я согласен с условиями политики конфиденциальности
+                                a(href="#").footnote__link.finding__footnote-link Подробнее
+                        // end footnote
+
+                        .order-form__btn
+                          button(type="submit").button.finding__form-button Позвоните мне 
+
+                      // end order-form 
+
+                // end finding 
+
+              // end contacts
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
