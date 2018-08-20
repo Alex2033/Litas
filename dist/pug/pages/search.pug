@@ -1,0 +1,179 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.search-inner
+          .wrapper__container.search-inner__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="search.html") Поиск
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Поиск
+                .heading__line
+
+              // begin search-s 
+              section.search-s
+                .search-s__top
+
+                  // begin search
+                  form.search.search-s__form
+                      input(type="text" name="search" placeholder="Поиск по сайту").search__input
+                      button(type="submit").search__button
+                          i.fa.fa-search 
+                  // end search 
+
+                .search-s__bottom
+
+                  // begin search-result 
+                  .search-result
+                    .search-result__left
+                      .search-result__left-text Результаты поиска 1-5 из 13
+                    .search-result__right
+
+                      // begin pagination 
+                      .pagination
+                        button.pagination__btn Начало
+                        button.pagination__btn Пред.
+                        a.pagination__link.active(href="#") 1
+                        a.pagination__link(href="#") 2
+                        a.pagination__link(href="#") 3
+                        button.pagination__btn След.
+                        button.pagination__btn Конец
+                      //end pagination
+
+                  // end search-result 
+
+                .search-s__content
+                  ul.search-s__list
+                    li.search-s__item
+                      a.search-s__item-title(href="#") 1. Фирменные конверты
+                      .search-s__item-text
+                        p.
+                          Она поможет добиться 100%-ного совпадения корпоративных цветов при печати логотипа на конвертах; несколько сортов бумаги, в том числе дизайнерской; разработку не только макета, но и фирменного стиля (логотип), если вам вдруг потребуется такая услуга; тщательность исполнения и максимальное внимание ко всем этапам работ с вашими конвертами...
+                    li.search-s__item
+                      a.search-s__item-title(href="#") 2. Цифровая печать
+                      .search-s__item-text
+                        p.
+                          Изготовление визиток для личного пользования производится нами на различных типах бумаги, которые клиент может выбрать из широкого спектра сырья...
+                    li.search-s__item
+                      a.search-s__item-title(href="#") 3. Конверт фирменный С4
+                      .search-s__item-text
+                        p.
+                          Конверт фирменный С4 Формат: С4; Размер: 229×324 мм; Количество цветов печати: от 1 до 4; Плотность бумаги, г/м2: 80/90/100; Внутренность: без запечатки / серая запечатка / пин запечатка / голубые полоски; Тип клея: водяной / лента; Наличие окна: без окна / окно 45х90 справа внизу / окно 90х45 слева внизу / окно 90х60 слева внизу / панорамное окно 170х270
+                    li.search-s__item
+                      a.search-s__item-title(href="#") 4. Конверт фирменный С5
+                      .search-s__item-text
+                        p.
+                          Конверт фирменный С5 Формат: С5; Размер: 162×229 мм; Количество цветов печати: от 1 до 4; Плотность бумаги, г/м2: 80/90/100; Внутренность: без запечатки / серая запечатка / пин запечатка / голубые полоски; Тип клея: водяной / лента; Наличие окна: без окна / окно 45х90 справа внизу / окно 35х95 слева вверху
+                    li.search-s__item
+                      a.search-s__item-title(href="#") 5. Перекидные календари
+                      .search-s__item-text
+                        p.
+                          Вы сможете заказать у нас: настенные перекидные календари отличного качества на мелованной бумаге.
+
+                // begin search-result 
+                .search-result
+                  .search-result__left
+                    .search-result__left-text Результаты поиска 1-5 из 13
+                  .search-result__right
+
+                    // begin pagination 
+                    .pagination
+                      button.pagination__btn Начало
+                      button.pagination__btn Пред.
+                      a.pagination__link.active(href="#") 1
+                      a.pagination__link(href="#") 2
+                      a.pagination__link(href="#") 3
+                      button.pagination__btn След.
+                      button.pagination__btn Конец
+                    //end pagination
+
+                // end search-result
+
+              // end search-s 
+              
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')

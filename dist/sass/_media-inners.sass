@@ -225,6 +225,11 @@
     .contacts-inner
         padding-bottom: 40px
 
+    /* SEARCH */
+
+    .search-s__form
+        max-width: 100%
+
 @media (min-width: 993px)
 
     /* GLOBAL */
@@ -365,6 +370,23 @@
     .finding__map
         order: 1
 
+    /* SEARCH */
+
+    .search-s__form
+        margin-bottom: 55px
+
+        .pagination
+            font-size: 16px
+
+        .search__input
+            opacity: 1 !important // для перебивки стилей с jquery
+
+    .search-s__content
+        padding: 25px 25px 35px 15px
+
+    .search-s__item
+        margin-bottom: 25px
+
 
 @media #{$_xxs}
 
@@ -417,3 +439,11 @@
 
     .finding__footnote
         font-size: 12px
+
+    /* SEARCH */
+
+    .search-result__left-text
+        font-size: 15px
+
+    .search-s__form
+        margin-bottom: 25px
