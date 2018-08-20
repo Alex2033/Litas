@@ -1,0 +1,35 @@
+.production__container
+    @extend %container
+
+.products
+    +row-flex()
+    margin-bottom: -20px
+
+.products__item
+    background-color: $light
+    +col(2.4)
+    text-align: center
+    margin-bottom: 20px
+
+.products__link
+    display: flex
+    flex-direction: column
+    height: 100%
+    padding: 55px 5px 20px
+
+.products__img
+    width: 80px
+    height: 80px
+    display: flex
+    flex-direction: column
+    margin: 0 auto 40px
+
+    img
+        margin: auto auto 0
+
+.products__text
+    color: $color-main
+    text-transform: uppercase
+
+.products__text-line
+    display: block

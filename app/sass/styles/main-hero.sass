@@ -1,0 +1,32 @@
+.hero__container
+    @extend %container
+    position: relative
+
+.hero__item
+    background-size: cover
+    background-position: 50% 80%
+    position: relative
+    background-repeat: no-repeat
+    min-height: 451px
+
+.hero-arrow
+    display: block
+    cursor: pointer
+    z-index: 20
+    position: absolute
+    background-color: transparent
+    border: 0
+    top: 50%
+    trasform: translateY(-50%)
+
+    &:focus
+        outline: 0
+
+    &:hover
+        opacity: .9
+
+.hero__arrow--left
+    left: 20px
+
+.hero__arrow--right
+    right: 20px

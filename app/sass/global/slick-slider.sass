@@ -1,0 +1,36 @@
+.slick-slide
+    &:focus
+        outline: 0
+
+.slick-buttons
+    position: absolute
+    display: flex
+    justify-content: center
+    position: absolute
+    z-index: 10
+    bottom: 30px
+    width: 100%
+    left: 0
+
+    li
+        &:not(:last-child)
+            margin-right: 12px
+
+        &.slick-active
+            .slick-button
+                opacity: 1
+
+.slick-button
+    border: 0
+    width: 17px
+    height: 17px
+    border-radius: 50%
+    background-color: #555555
+    opacity: 0.5
+    cursor: pointer
+
+    &:hover
+        opacity: 1
+
+    &:focus
+        outline: 0

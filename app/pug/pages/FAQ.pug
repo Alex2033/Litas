@@ -1,0 +1,170 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.faq-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="about.html") О типографии
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="FAQ.html") FAQ
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h2.h2 FAQ
+                .heading__line
+
+              // begin faq 
+              section.faq
+
+                // begin accordions 
+                .accordions.faq__list
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text Какой минимальный тираж для печати листовок?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+                            
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text В чем отличия между фальцовкой, биговкой и вырубкой?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text С какими форматами бумаги Вы работаете?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text Работаете ли Вы с другими регионами?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+                            
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text Какой размер шрифта лучше использовать для печати? 
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text Есть ли у Вас система скидок?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+
+                    .accordions__item.faq__item
+                      button(type="button").accordions__button.faq__item-button
+                          i.fa.fa-angle-right
+                          span.accordions__span.faq__item-text Для чего используется биговка?
+                      .accordions__content.faq__item-content
+                        .faq__text
+                          p.
+                            Биговка-  это процесс нанесения на лист линии сгиба. Линия сгиба нужна для аккуратного сгибания бумаги или картона. Благодаря этому, изделие не растрескивается при сгибании и не изменяет цвет.  Чаще всего применяется для приглашений, папок и т.д.
+                          
+                // end accordions
+
+              // end faq
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

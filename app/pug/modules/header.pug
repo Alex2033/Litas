@@ -1,0 +1,58 @@
+// begin header 
+header(style="background-image:url(img/global/gradient-bg.png);").header
+    .header__container
+        .header__row
+            .header__logo
+                // begin logo
+                a(href="index.html").logo
+                    img(src="img/header/logo.png", alt="Logotype") 
+                // end logo 
+            .header__content
+                .header__top
+                    // begin location
+                    ul.location.header__location
+                        li.location__item.location__address Санкт-Петербург ул. Лифляндская, д.3
+                        li.location__item.location__phone
+                            |Тел/факс: 
+                            a(href="tel:+78123255134").location__link +7 (812) 325-51-34
+                        li.location__item.location__time
+                            |Пн-пт 
+                            b 10:00-18:00
+                    // end location
+                    ul.socials.socials--hidden
+                        li.socials__item
+                            a(href="#").socials__link
+                                img(src="img/menu/fb.png", alt="Facebook icon")
+                        li.socials__item
+                            a(href="#").socials__link
+                                img(src="img/menu/vk.png", alt="Vkontakte icon")
+                        li.socials__item
+                            a(href="#").socials__link
+                                img(src="img/menu/insta.png", alt="Instagram icon")
+                .header__bottom.header__bottom--visible
+                    // begin search
+                    form.search
+                        input(type="text" name="search" placeholder="Поиск по сайту").search__input
+                        button(type="button").search__button
+                            i.fa.fa-search 
+                    // end search 
+                    .header__buttons
+                        button.order-btn.button.header__button Оформить заказ
+
+            .header__bottom.header__bottom--hidden
+                    // begin search
+                    form.search
+                        input(type="text" name="search" placeholder="Поиск по сайту").search__input
+                        button(type="submit").search__button
+                            i.fa.fa-search 
+                    // end search 
+                    .header__buttons
+                        button.order-btn.button.header__button Оформить заказ
+
+                    // begin toggle-menu 
+                    button.toggle-menu.header__toggle
+                        span.tgl.tgl-topper
+                        span.tgl.tgl-footer
+                        span.tgl.tgl-bottom
+                    // end toggle-menu 
+// end header 

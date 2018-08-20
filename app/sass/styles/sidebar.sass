@@ -1,0 +1,96 @@
+.sidebar
+    +col(2.5)
+    border-right: 1px solid #e7e7e7
+    min-height: 1030px
+
+.sidebar__wrapper
+    padding-top: 25px
+    margin-bottom: 25px
+
+.sidebar__title
+    text-transform: uppercase
+    font-size: 14px
+    font-family: $gotham-r
+    border-bottom: 1px solid $accent
+    color: $dark
+    padding: 0 15px 5px
+    margin-bottom: 8px
+    margin-right: 18px
+    white-space: nowrap
+
+.sidebar__list
+    padding-top: 12px
+
+    
+
+.sidebar__link
+    font-family: $gotham-r
+    font-size: 14px
+    color: $dark
+    display: block
+    padding: 8px 0 8px 30px
+    transition: background-color .2s ease, border-color .2s ease
+    border-right: 2px solid transparent
+    white-space: nowrap
+
+    &:hover
+        background-color: lighten($accent, 32%)
+        border-color: $accent
+        font-weight: 700
+
+.sidebar-menu
+    display: none
+    position: relative
+
+.hidden-sidebar
+    display: none
+    background-color: $accent
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    z-index: 10
+
+.hidden-sidebar__list
+    @extend %container
+    padding: 15px 15px 15px 6%
+
+.hidden-sidebar__item
+    margin-bottom: 8px
+
+.hidden-sidebar__link
+    color: #fff
+    font-size: 14px
+
+.sidebar__top
+    background-color: $accent
+
+.sidebar-menu__container
+    @extend %container
+
+.sidebar-menu__toggle
+    .tgl
+        width: 18px
+        height: 2px
+
+    .tgl-topper
+        top: 11px
+
+    .tgl-bottom
+        top: 21px
+
+.sidebar-menu__button
+    display: flex
+    align-items: center
+    flex-grow: 1
+
+.sidebar-menu__text
+    text-transform: uppercase
+    font-family: $gotham-m
+    font-size: 13px
+    color: #fff
+
+.hidden-button,
+.services__sidebar-button
+    &.hidden
+        visibility: hidden

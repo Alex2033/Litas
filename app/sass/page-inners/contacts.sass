@@ -1,0 +1,140 @@
+.contacts
+    padding-left: 35px
+
+.contacts-inner
+    padding-bottom: 110px
+
+.contacts__info
+    display: flex
+    margin-bottom: 25px
+    justify-content: space-between
+
+.contacts__info-left,
+.contacts__info-right
+    display: flex
+
+.contacts__info-left
+    justify-content: space-between
+    width: 63%
+
+.contacts__info-right
+    justify-content: flex-end
+    width: 37%
+
+.contacts__info-line
+    display: flex
+    align-items: center
+
+.contacts__info-img
+    margin-right: 8px
+
+.contacts__info-text
+    line-height: 1.8
+
+.contacts__info-link
+    line-height: 1.8
+    color: $color-main
+
+    &:hover
+        text-decoration: underline
+
+.finding
+    overflow: hidden
+
+.finding__heading
+    text-align: center
+
+.finding__title
+    text-transform: uppercase
+    position: relative
+    display: inline-block
+    padding: 0 15px
+    margin-bottom: 30px
+
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        height: 1px
+        width: 100%
+        max-width: 126px
+        background-color: $accent
+
+    &::before
+        left: 100%
+
+    &::after
+        right: 100%
+
+.finding__set
+    display: flex
+    flex-wrap: wrap
+    margin-right: -10px
+    justify-content: center
+
+.finding__item
+    height: 0
+    padding-bottom: 50%
+    width: calc(50% - 7px)
+    margin-right: 7px
+    margin-bottom: 7px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 90% 50%
+
+.finding__item--big
+    width: calc(100% - 10px)
+
+
+.finding__map
+    width: calc(62% - 7px)
+    height: initial
+    padding-bottom: 0
+    min-height: 345px
+
+    .map
+        min-height: initial
+        height: 100%
+
+    .map__info
+        left: 5%
+        transform: translate(0)
+
+.finding__form
+    width: calc(38% - 7px)
+    height: initial
+    padding-bottom: 0
+
+.finding__form-wrapper
+    position: static
+    transform: translate(0)
+    border: 2px solid $accent
+    padding-bottom: 30px
+
+.finding__form-title
+    padding: 0
+    text-align: center
+    font-weight: 400
+
+.finding__form-heading
+    justify-content: center
+    margin-bottom: 30px
+
+.finding__textarea
+    margin-bottom: 10px
+
+.finding__form-main
+    margin-bottom: 25px
+
+.finding__footnote
+    margin-bottom: 15px
+
+.finding__checkmark
+    background-color: $accent
+
+.finding__footnote-link
+    color: $accent
+
+.finding__form-button
+    border-radius: 30px

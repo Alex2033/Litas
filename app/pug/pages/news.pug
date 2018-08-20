@@ -1,0 +1,158 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.news-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="news.html") Новости и акции
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Новости и акции
+                .heading__line
+
+              // begin news 
+              section.news
+                .news__wrapper
+                  .news__left
+                    a.news__item(href="news-single.html")
+                      span.news__img(style="background-image: url(img/news-pages/spiske_small.jpg);")
+                      span.news__body
+                        h3.news__title Ricoh Pro VC70000 и новые чернила: прорыв в технологии струйной печати
+                        .news__text
+                          p.
+                            Специально разработанные компанией Ricoh чернила обеспечивают до 40% экономии расходов на бумагу, позволяя печатать на обычных офсетных сортах, что позволило повысить концентрацию пигмента...
+                        span.news__footer
+                          time(datetime="2018-07-10").news__date Июль 10, 2018 
+                          span.news__link Подробнее
+
+                  .news__right
+                    a.news__item.news__item-right(href="news-single.html")
+                      span.news__img.news__img-right(style="background-image: url(img/news-pages/book.jpg);")
+                      span.news__body
+                        h3.news__title.news__title-right Только до 11 января скидка 10% на печать брошюр и листовок
+                        .news__text.news__text-right
+                          p.
+                            Это рыба-текст. Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации систем массового участия. Значимость этих проблем очень очевидна...
+                        span.news__footer
+                          time(datetime="2018-07-10").news__date Июль 6, 2018 
+                          span.news__link Подробнее
+
+                    a.news__item.news__item-right(href="news-single.html")
+                      span.news__img.news__img-right(style="background-image: url(img/news-pages/pechatnaya.jpg);")
+                      span.news__body
+                        h3.news__title.news__title-right Представляем вам нашу новую печатную машинку
+                        .news__text.news__text-right
+                          p.
+                            Это рыба-текст. Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации систем массового участия. Значимость этих проблем очень очевидна...
+                        span.news__footer
+                          time(datetime="2018-07-10").news__date Июнь 5, 2018 
+                          span.news__link Подробнее
+
+                    a.news__item.news__item-right(href="news-single.html")
+                      span.news__img.news__img-right(style="background-image: url(img/news-pages/calendar.jpg);")
+                      span.news__body
+                        h3.news__title.news__title-right Календарный сезон в типографии  Литас+ открыт
+                        .news__text.news__text-right
+                          p.
+                            Это рыба-текст. Равным образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации систем массового участия. Значимость этих проблем очень очевидна...
+                        span.news__footer
+                          time(datetime="2018-07-10").news__date Март 12, 2018 
+                          span.news__link Подробнее
+
+                // begin pagination 
+                .pagination
+                  button.pagination__btn Начало
+                  button.pagination__btn Пред.
+                  a.pagination__link.active(href="#") 1
+                  a.pagination__link(href="#") 2
+                  a.pagination__link(href="#") 3
+                  button.pagination__btn След.
+                  button.pagination__btn Конец
+                //end pagination
+
+              // end news  
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

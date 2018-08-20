@@ -1,0 +1,97 @@
+.order__container
+    @extend %container
+  
+.orders
+    margin-bottom: 15px
+    display: flex
+    flex-wrap: wrap  
+    
+
+.orders__step
+    text-align: center
+    display: flex
+    flex-direction: column
+    +col(3)
+    margin-bottom: 45px
+
+    &:nth-child(1)
+        .orders__number
+            background-color: #43b3c8
+    &:nth-child(2)
+        .orders__number
+            background-color: #42a6c4
+    &:nth-child(3)
+        .orders__number
+            background-color: #4099c1
+
+    &:nth-child(4)
+        .orders__number
+            background-color: #3d7eb9
+    &:nth-child(5)
+        .orders__number
+            background-color: #3b6cb4
+    &:nth-child(6)
+        .orders__number
+            background-color: #3956ae
+    &:nth-child(7)
+        .orders__number
+            background-color: #3740a8
+
+.orders__step--big
+    +col(4)
+
+.orders__item
+    width: 192px
+    height: 192px
+    border-radius: 50%
+    position: relative
+    background-color: #f8f8f8
+    margin: 0 auto 15px
+
+.orders__number
+    position: absolute
+    top: 30px
+    left: 30px
+    transform: translate(-50%, -50%)
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    font-size: 35px
+    font-family: $montserrat-sb
+    background-color: $accent
+
+.orders__img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.orders__text
+    max-width: 215px
+    margin: 0 auto
+    width: 100%
+
+.orders__bottom
+    +row-flex()
+
+    .orders__step
+
+        &:nth-child(1)
+            .orders__number
+                background-color: #3d7eb9
+        &:nth-child(2)
+            .orders__number
+                background-color: #3b6cb4
+        &:nth-child(3)
+            .orders__number
+                background-color: #3956ae
+        &:nth-child(4)
+            .orders__number
+                background-color: #3740a8
+
+.order__button
+    text-align: center

@@ -1,0 +1,449 @@
+@media #{$_lg}
+
+    /* GLOBAL */
+
+    .sidebar
+        +col(3)
+
+    .sidebar__title
+        padding: 0 2px 5px
+
+    .inner-content
+        +col(9)
+
+    .finding__footnote
+        font-size: 12px
+
+    /* PRODUCTION-VALUE */
+
+    .production-value
+        padding-left: 0
+
+    .production__cards
+        margin-right: -12px
+
+    .production-value__item
+        width: calc(25% - 12px)
+        margin-right: 12px
+
+    .card__text-line
+        font-size: 12px
+
+    /* CONTACTS */
+
+    .finding__form-title
+        font-size: 27px
+
+@media #{$xmd} and #{$_md}
+
+    /* GLOBAL */
+
+    .card
+        padding-left: 12px
+        padding-right: 12px
+
+@media #{$_md}
+    
+    /* NEWS */
+
+    .news__wrapper
+        margin-bottom: 20px
+
+    .news__left, .news__right
+        width: 100%
+
+    .news__left
+        margin-bottom: 20px
+
+        .news__img
+            padding-bottom: 37.5%
+
+    .news__body
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    /* CONTACTS */
+
+    .contacts__info
+        flex-wrap: wrap
+
+    .contacts__info-left
+        flex-wrap: wrap
+        width: 50%
+
+    .contacts__info-right
+        width: 50%
+
+    .contacts__info-item
+        width: 100%
+
+    .contacts__info-left
+
+
+    .finding__footnote
+        font-size: 11px
+
+    .finding__checkmark
+        width: 16px
+        height: 16px
+
+@media #{$_xmd}
+
+    /* GLOBAL */
+
+    .wrapper__top
+        margin-bottom: 0
+
+    .sidebar
+        position: absolute
+        min-height: 100%
+        z-index: -100
+        background-color: $blue-dark
+        top: 0
+        border-right: 0
+        left: 0
+        padding-left: 3%
+        width: 0
+        opacity: 0
+        transition: all .5s
+
+        &.active
+            +col(4)
+            opacity: 1
+            z-index: 100
+
+            .sidebar__wrapper
+                opacity: 1
+
+    .wrapper__bottom
+        .hide
+            &.active
+                visibility: visible
+
+    .sidebar__wrapper
+        transition: opacity 1.75s
+        opacity: 0
+
+    .sidebar__title
+        color: #fff
+        border-bottom: 0
+        padding: 0
+        margin-bottom: 0
+        font-family: $gotham-b
+
+    .sidebar__link
+        color: #fff
+        padding-left: 0
+
+    .inner-content
+        width: 100%    
+
+    .breadcrumbs
+        padding-left: 0
+
+    .card__title
+        margin-bottom: 10px
+        font-size: 12px
+
+    /* MENU */
+
+    .inner-menu__navigation
+        +col(11)
+        order: 1
+
+    .inner-menu
+        padding: 6px 0
+
+    .inner-menu__toggle
+        display: block
+
+    .inner-menu__list
+        justify-content: space-between
+        padding-bottom: 0
+        .navigation__item
+            margin-right: 0
+
+    /* PRODUCTION-VALUE */
+
+    .page-inner
+        padding-bottom: 125px
+
+    /* SITE-MAP */
+
+    .site-map__wrapper
+        max-width: 655px
+        width: 100%
+        margin: 0 auto
+
+    .map-list
+        +row-flex()
+
+    .map-list__item
+        width: 50%
+        margin-bottom: 30px
+
+    .site-map__container-heading,
+    .site-map__heading,
+    .site-map__breadcrumbs
+        width: 100%
+
+    .site-map__container-heading
+        padding-left: 0
+        padding-right: 0
+
+    .prod-value
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+
+        .map-list__link
+            align-self: flex-start
+            padding-left: 32%
+
+    .ab-printing,
+    .nw-shares,
+    .cnt
+        width: 82%
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+
+    .site-map__inner
+        margin-bottom: 0
+
+    /*  404  */
+
+    .error-page__list
+        .ab-printing, .cnt, .nw-shares
+            width: 82%
+
+    .error-page__wrapper
+        padding-bottom: 90px
+
+    /* CONTACTS */
+    .contacts-inner
+        padding-bottom: 40px
+
+    /* SEARCH */
+
+    .search-s__form
+        max-width: 100%
+
+@media (min-width: 993px)
+
+    /* GLOBAL */
+
+    .sidebar
+        display: block !important
+        position: relative !important
+
+
+
+@media #{$_sm}
+    
+    /* GLOBAL */
+    .sidebar-menu
+        display: block
+
+    /* MENU-INNER */
+
+    .inner-menu__toggle
+        display: none
+
+    /* PRODUCTION-VALUE */
+
+    .page-inner
+        padding-bottom: 60px
+
+    .production-value__cards
+        margin-right: -10px
+
+    .production-value__item
+        width: calc(50% - 10px)
+        margin-right: 10px
+
+    .page-inner__heading
+        padding-left: -10px
+        padding-right: -10px
+
+    /* SITE-MAP */
+
+    .site-map__wrapper
+        max-width: 255px
+        padding-bottom: 60px
+
+    .site-map__title
+        display: block
+        text-align: center
+
+    .map-list
+        flex-direction: column
+
+    .prod-value
+        .map-list__link
+            padding-left: 0
+ 
+    .ab-printing,
+    .nw-shares,
+    .cnt
+        width: initial
+        display: block
+
+    .map-list__item
+        width: 100%
+        padding-left: 18%
+
+    /* 404 */
+
+    .error-page__list .map-list__item
+        width: 100%
+
+    .error-page__list 
+        .ab-printing, .cnt, .nw-shares
+            display: block
+
+    /* SERVICES-PAGE */
+
+    .services-p__item
+        width: calc(50% - 16px)
+
+    /* FAQ */
+
+    .faq__item-button
+        display: flex
+
+    /* NEWS */
+
+    .news__text
+        p
+            margin-top: 0
+            margin-bottom: 10px
+
+    .news__img-right
+        width: 142px
+        height: 120px
+
+    .news__title-right
+        margin-bottom: 0
+
+    .news__date, .news__link
+        font-size: 12px
+
+    /* CONTACTS */
+
+    .contacts
+        padding-left: 0
+
+    .contacts__info
+        padding-left: 15%
+
+    .contacts__info-left,
+    .contacts__info-right
+        width: 100%
+
+    .finding__set
+        margin-right: 0
+
+    .finding__item
+        width: 100%
+        margin: 0 0 10px
+        padding-bottom: 100%
+
+    .finding__item--big
+        padding-bottom: 50%
+
+    .finding__map, .finding__form
+        padding-bottom: 0
+
+    .finding__form-wrapper
+        padding: 30px 12px 20px
+
+    .finding__footnote
+        font-size: 14px
+        max-width: 100%
+
+    .finding__checkmark
+        width: 25px
+        height: 25px
+
+    .finding__map
+        order: 1
+
+    /* SEARCH */
+
+    .search-s__form
+        margin-bottom: 55px
+
+        .pagination
+            font-size: 16px
+
+        .search__input
+            opacity: 1 !important // для перебивки стилей с jquery
+
+    .search-s__content
+        padding: 25px 25px 35px 15px
+
+    .search-s__item
+        margin-bottom: 25px
+
+
+@media #{$_xxs}
+
+    /* GLOBAL */
+
+    .pagination__btn,
+    .pagination__link
+        font-size: 15px
+
+    
+    /* PRODUCTION-VALUE */
+
+    .production-value__cards
+        margin-right: 0
+        margin-bottom: -12px
+        justify-content: center
+
+    .production-value__item
+        width: 100%
+        max-width: 250px
+        margin: 0 0 12px
+
+    /* SERVICES-PAGE */
+
+    .services-p__item
+        width: 100%
+        margin: 0 auto 15px
+        max-width: 230px
+
+    /* NEWS-SINGLE */
+
+    .news--padding
+        padding: 0
+
+    .backward-link
+        font-size: 16px
+
+    /* NEWS */
+
+    .news__item-right
+        flex-wrap: wrap
+
+    .news__img-right
+        margin: 0 auto 5px
+
+    .news__footer
+        justify-content: space-around
+
+    /* CONTACTS */
+
+    .finding__footnote
+        font-size: 12px
+
+    /* SEARCH */
+
+    .search-result__left-text
+        font-size: 15px
+
+    .search-s__form
+        margin-bottom: 25px

@@ -1,0 +1,197 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="production-value.html") Стоимость продукции
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h2.h2 Стоимость продукции
+                .heading__line
+
+              // begin production-value 
+              section.production-value 
+                // begin cards 
+                ul.cards.production-value__cards
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/1.png", alt="Production image")
+                    h6.card__title Плакаты
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 10 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 400 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/2.png", alt="Production image")
+                    h6.card__title Листовки
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 100 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 3018 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/3.png", alt="Production image")
+                    h6.card__title Буклеты
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 100 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 3113 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/4.png", alt="Production image")
+                    h6.card__title Брошюры
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 100 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 3018 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/6.png", alt="Production image")
+                    h6.card__title Календари
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 100 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 520 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/5.png", alt="Production image")
+                    h6.card__title Папки
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 20 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 1800 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/8.png", alt="Production image")
+                    h6.card__title Упаковка
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 10 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 2000 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/9.png", alt="Production image")
+                    h6.card__title Хедеры
+                      br 
+                      |  шелфтокеры, воблеры
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 50 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 1000 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/5.png", alt="Production image")
+                    h6.card__title Блокноты
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 5 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 600 р.
+                  li.card.item-hover.production-value__item
+                    .card__img
+                      img(src="img/production/10.png", alt="Production image")
+                    h6.card__title Другое
+                      br
+                      |  (Нестандартные проекты)
+                    .card__text
+                      .card__text-line Тираж, от 
+                        a.card__link(href="#") 10 экз.
+                      .card__text-line Стоимость, от 
+                        a.card__link(href="#") 300 р.
+                // end cards 
+              // end production-value  
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

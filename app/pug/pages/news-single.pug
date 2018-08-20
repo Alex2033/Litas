@@ -1,0 +1,109 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.news-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="news.html") Новости и акции
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Новости и акции
+                .heading__line
+
+              // begin news 
+              section.news.news--padding
+                .news__img.news__img--single(style="background-image: url(img/news-pages/spiske.jpg);")
+                h3.news__title Ricoh Pro VC70000 и новые чернила: прорыв в технологии струйной печати
+                time(datetime="2018-07-10").news__date Июль 10, 2018
+                .news__text
+                  p.
+                    Специально разработанные компанией Ricoh чернила обеспечивают до 40% экономии расходов на бумагу, позволяя печатать на обычных офсетных сортах, что позволило повысить концентрацию пигмента. Новые чернила обеспечивают производство стандартных офсетных работ без применения грунтовки. Они более вязкие и содержат меньше воды, чем те, что использовались ранее.                                   Pro VC70000 дополнит линейку платформ струйной печати Ricoh: Pro VC60000, Ricoh Pro VC40000, Ricoh Pro V20000 и InfoPrint 5000. Среди ее преимуществ – расширенные возможности сушки и новые модули подачи и вывода бумаги. Скорость печати до 150 м/мин, производительность около 130 тысяч оттисков A4 в час, а пьезоэлектрические печатающие головы последнего поколения обеспечивают разрешение до 1200×1200 dpi и могут генерировать капели размером от 2 до 23 pl. Скорость печати зависит от используемой бумаги, печать на офсетной бумаге будет на 20% медленнее, сообщает Ricoh.
+                  p.
+                    «Наши клиенты постоянно говорят о необходимости снижения затрат, повышения качества и увеличения производительности. Наша новая печатная система с лихвой закрывает все эти потребности, – отметил Эйф де Риддер, вице-президент по коммерческой печати, бизнес-группа коммерческой и промышленной печати, Ricoh Europe. – Мы уверены, что новая платформа и новые чернила – именно то, чего так долго ждали в отрасли, и это ускорит переход на цифровые технологии. Это, несомненно, большой прорыв!».
+                a.backward-link(href="news.html") Вернуться к списке новостей
+              // end news 
+
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

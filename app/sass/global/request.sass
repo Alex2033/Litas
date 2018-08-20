@@ -1,0 +1,253 @@
+.request
+    height: 100vh
+    min-height: 600px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    display: none
+
+.request__background
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(#000, .33)
+    z-index: 1
+
+.order-form
+    position: absolute
+    top: 2%
+    left: 50%
+    max-width: 853px
+    width: 100%
+    transform: translateX(-50%)
+    background-color: #fff
+    z-index: 2
+    padding: 24px 20px 50px
+
+.exit-btn
+    display: block
+    float: right
+    background-color: transparent
+    border: none
+    width: 38px
+    cursor: pointer
+    transition: transform .15s ease
+        
+
+    &:active
+        transform: translateY(2px)
+
+    &:focus
+        outline: 0
+
+.order-form__top
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0 35px 20px
+
+.order-form__top-left,
+.order-form__top-right
+    width: calc(50% - 40px)
+
+.order-form__top-left
+    margin-right: 40px
+
+.order-form__top-right
+    margin-left: 40px
+
+.order-form__label
+    display: block
+    margin-bottom: 6px
+    text-transform: uppercase
+
+.order-form__item
+    margin-bottom: 20px
+    display: block
+    width: 100%
+    border: 2px solid darken($accent, 8%)
+    padding: 5px 12px
+    border-radius: 6px
+
+    &:focus
+        box-shadow: 0 0 0 1px $accent
+        outline: 0
+
+.order-form__textarea
+    resize: none
+    min-height: 114px
+
+.inputfile
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+    
+.inputfile-label
+    color: #3b6cb4
+    cursor: pointer
+    .fa
+        margin-right: 4px
+        color: #3b6cb4
+
+    &:hover
+        opacity: .9
+
+        .inputfile-label__text
+            text-decoration: underline
+
+.footnote
+    width: 100%
+    display: flex
+    font-size: 14px
+    align-items: center
+    justify-content: center
+    position: relative
+
+.order-form__bottom
+    margin-bottom: 30px
+
+.accordions
+    margin-bottom: 25px
+
+.accordions__item
+    margin-bottom: 20px
+
+.accordions__button
+    text-align: left
+    display: block
+    border: 0
+    background-color: $light
+    padding: 24px 15px
+    width: 100%
+    border-left: 2px solid transparent
+    cursor: pointer
+    transition: background-color .2s ease, border-color .2s ease
+
+    .fa
+        color: $accent
+        margin-right: 12px
+        transform-origin: 50% 50%
+        transition: transform .2s ease
+
+    &:hover, &.active
+        background-color: lighten($accent, 32%)
+        border-color: $accent
+
+        .accordions__span
+            border-color: $color-main
+
+    &:focus
+        outline: 0
+
+    &.active
+        .fa
+            transform: rotate(90deg)
+
+
+.accordions__span
+    text-transform: uppercase
+    font-weight: 500
+    display: inline-block
+    border-bottom: 0.5px solid transparent
+
+.accordions__content
+    display: none
+    border: 2px solid lighten($accent, 32%)
+    border-top: none
+    padding: 20px 30px
+
+.accordions__textarea
+    min-height: 136px
+    resize: none
+
+.checkbox-container
+    position: relative
+    width: 25px
+    height: 25px
+    display: flex
+    margin-right: 10px
+    flex-shrink: 0
+
+.order-form__checkbox
+    opacity: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    height: 100%
+    z-index: 1
+    cursor: pointer
+
+.order-form__checkbox:checked + .checkmark::after
+    display: block
+
+.checkmark
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    border-radius: 5px
+    background-color: $blue-dark
+    cursor: pointer
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    &::after
+        display: none
+        content: ''
+        position: absolute
+        left: 9px
+        top: 5px
+        width: 5px
+        height: 10px
+        border: solid white
+        border-width: 0 3px 3px 0
+        transform: rotate(45deg)
+
+.footnote__link
+    margin-left: 3px
+    color: $blue-dark
+    text-decoration: underline
+
+.order-form__btn
+    width: 100%
+    text-align: center
+
+.order-form__select
+    cursor: pointer
+
+    option
+        font-size: 14px
+        padding: 5px 10px
+        transition: background-color .2s ease
+
+        &:hover
+            background-color: lighten($accent, 32%)
+
+.leaflets, .brochures
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.leaflets__left,
+.leaflets__right,
+.brochures__left,
+.brochures__right
+    width: calc(50% - 40px)
+
+.leaflets__left
+    margin-right: 40px
+
+.leaflets__right
+    margin-left: 40px

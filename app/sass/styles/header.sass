@@ -1,0 +1,104 @@
+.header
+    padding-top: 19px
+    padding-bottom: 21px
+
+.header__container
+    @extend %container
+
+.header__row
+    +row-flex()
+    align-items: flex-end
+    align-items: center
+
+.logo
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+
+    img
+        max-height: 100px
+
+.header__logo
+    +col(2.5)
+
+.header__content
+    +col(9)
+    display: flex
+    flex-direction: column
+
+.header__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header__location
+    max-width: 650px
+    margin-bottom: 20px
+
+.header__bottom
+    +row-flex()
+    align-items: center
+
+.header__bottom--hidden
+    display: none
+
+.location
+    +row-flex(space-between, nowrap)
+
+.location__item,
+.location__link
+    color: #fff
+    font-size: 14px
+
+.location__link
+    font-weight: 600
+
+.search
+    display: flex
+    align-items: center
+    position: relative
+    flex-grow: 1
+    max-width: 650px
+
+.search__input
+    flex-grow: 1
+    border-radius: 20px
+    border: 0
+    padding: 12px 23px
+    transition: width .5s, opacity .5s
+
+    &:focus
+        outline: 0
+
+.search__button
+    background-color: $accent
+    border-radius: 50%
+    width: 44px
+    height: 44px
+    border: 0
+    cursor: pointer
+    position: absolute
+    top: 0
+    right: -2px
+    box-shadow: 0 0 8px 0 rgba($accent, .75)
+
+    .fa
+        font-size: 25px
+        color: #fff
+
+    &:hover
+        opacity: .9
+
+    &:focus
+        outline: 0
+
+.header__buttons
+    text-align: right
+
+.header__button
+    width: 100%
+    max-width: 230px
+
+.socials--hidden
+    display: none

@@ -1,0 +1,41 @@
+.menu
+    padding: 16px 0
+    background-color: $accent
+
+.menu__container
+    @extend %container
+
+.menu__row
+    +row-flex()
+    align-items: center
+
+.navigation
+    +col(9.5)
+
+.navigation__list
+    display: flex
+    width: 100%
+    justify-content: flex-end
+    flex-wrap: wrap
+
+.navigation__item
+    &:not(:last-child)
+        margin-right: 20px
+
+.navigation__link
+    text-transform: uppercase
+    color: #fff
+    font-size: 12px
+    display: block
+    font-family: $gotham-m
+
+    &:hover
+        text-decoration: underline
+
+.menu__socials
+    +col(2)
+    padding-left: 20px
+    display: none
+
+.inner-menu__socials
+    order: 1

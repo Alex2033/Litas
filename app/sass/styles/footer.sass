@@ -1,0 +1,75 @@
+.footer
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    padding-top: 33px
+    padding-bottom: 43px
+    overflow: hidden
+
+.footer__container
+    @extend %container
+
+.footer__wrapper
+    +row-flex()
+    align-items: flex-start
+
+.footer__left
+    +col(5.5)
+    display: flex
+    align-items: flex-start
+
+.footer__logo
+    +col(4.5)
+
+.footer__location
+    +col(7.5)
+    flex-direction: column
+    margin-bottom: -15px
+    margin-left: 60px
+
+    .location__item
+        margin-bottom: 15px
+
+.footer__content
+    +col(4.5)
+
+.footer-menu
+    display: flex
+    margin-bottom: -12px
+
+.footer-menu__left,
+.footer-menu__right
+    width: 50%
+
+.footer-menu__link
+    display: block
+    text-transform: uppercase
+    color: #fff
+    font-family: $gotham-m
+    font-size: 12px
+    margin-bottom: 12px
+
+    &:hover
+        font-weight: 700
+
+.footer-menu__link--hidden
+    display: none
+
+.footer__right
+    +col(2)
+
+.footer__socials
+    margin-bottom: 15px
+
+.copyright
+    font-size: 12px
+    color: #fff
+    margin-bottom: -6px
+
+.copyright__line
+    margin-bottom: 6px
+
+.copyright--secret,
+.socials--secret
+    display: none
+
