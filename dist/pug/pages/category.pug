@@ -1,0 +1,207 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container
+              .sidebar-menu__button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+              
+      // end sidebar-menu 
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.category-inner
+          .wrapper__container
+
+            include ../modules/sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="production-value.html") Стоимость продукции
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="category.html") Календари
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Календари
+                .heading__line
+
+              // begin category-s 
+              section.category-s
+                .category-s__top
+                  ul.category-s__list
+                    li.category-s__item Квартальные
+                    li.category-s__item Настенные
+                    li.category-s__item Карманные
+                    li.category-s__item Настольные
+                  .category-s__img
+                    img(src="img/category-page/calendar.png", alt="Calendar image")
+                  
+                .category__text
+                  p.
+                    Календари с корпоративной символикой – это один из самых популярных бизнес-сувениров. Они могут стать отличным рекламным носителем, 
+                    который займет свое место в офисе партнеров по бизнесу или в доме клиента. Удобный настольный или настенный 
+                    календарь помогает планировать время, поэтому такой подарок станет полезным для получателя. Популярность такой 
+                    полиграфической продукции объясняется и ее универсальностью. В зависимости от задачи заказчика, можно изготовить 
+                    большие квартальные календари с логотипом или маленькие карманные календарики с фирменной символикой.
+
+                // begin category-tabs 
+                ul.category-tabs
+                  li.category-tabs__item Стоимость
+                  li.category-tabs__item Технические требования
+                // end category-tabs 
+
+                // begin category-tab-content 
+                .category-tab-content
+                  .category-tab-content__text
+                    b Календарь:
+                    |  ТРИО на 3-х пружинах.
+                    br
+                    b Печать:
+                    |  4+0, Календарная сетка 2+0,
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  table.table
+                    tr.table__row
+                      th.table__th Тираж
+                      td.table__td 100
+                      td.table__td 200
+                      td.table__td 300
+                      td.table__td 400
+                      td.table__td 500
+                      td.table__td 1000
+                    tr.table__row
+                      th.table__th Цена у.е. за 1 шт.
+                      td.table__td 4,9
+                      td.table__td 3,75
+                      td.table__td 3,4
+                      td.table__td 3,09
+                      td.table__td 2,86
+                      td.table__td 2,3
+                    tr.table__row
+                      th.table__th Цена у.е. за тираж
+                      td.table__td 490
+                      td.table__td 750
+                      td.table__td 1020
+                      td.table__td 1235
+                      td.table__td 1430
+                      td.table__td 2300
+                  // end table 
+
+                  .category-tab-content__text
+                    b Календарь:
+                    |  ТРИО на 1 пружине.
+                    br
+                    b Печать:
+                    |  4+0, Календарная сетка 2+0.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  table(style="cellpadding: 0; cellcollapse: 0; cellspacing: 0;").table
+                    tr.table__row
+                      th.table__th Тираж
+                      td.table__td 100
+                      td.table__td 200
+                      td.table__td 300
+                      td.table__td 400
+                      td.table__td 500
+                      td.table__td 1000
+                    tr.table__row
+                      th.table__th Цена у.е. за 1 шт.
+                      td.table__td 4,5
+                      td.table__td 3,1
+                      td.table__td 2,7
+                      td.table__td 2,6
+                      td.table__td 2,4
+                      td.table__td 2,0
+                    tr.table__row
+                      th.table__th Цена у.е. за тираж
+                      td.table__td 450
+                      td.table__td 620
+                      td.table__td 810
+                      td.table__td 1040
+                      td.table__td 1200
+                      td.table__td 2000
+                  // end table 
+
+                // end category-tab-content 
+              // end category-s 
+    
+            // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
