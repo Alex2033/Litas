@@ -88,6 +88,11 @@
         width: 16px
         height: 16px
 
+    /* CATEGORY */
+
+    .category-s
+        padding-left: 0
+
 @media #{$_xmd}
 
     /* GLOBAL */
@@ -230,6 +235,25 @@
     .search-s__form
         max-width: 100%
 
+    /* CATEGORY */
+
+    .category-inner
+        padding-bottom: 0
+
+    .category-s__top
+        padding-left: 35px
+
+    .category-s__img
+        max-width: 385px
+
+    /* CARD-SERVICE */
+
+    .card-service-inner
+        padding-bottom: 0
+
+    .card-service
+        padding-left: 0
+
 @media (min-width: 993px)
 
     /* GLOBAL */
@@ -245,6 +269,37 @@
     /* GLOBAL */
     .sidebar-menu
         display: block
+
+    .table
+        display: flex
+
+    .table__row
+        flex-direction: column
+
+        &:first-child
+            .table__td
+                border-left: 2px solid #e7e7e7
+
+        &:not(:first-child)
+            .table__td-head
+                border-left: none
+
+        .table__td
+            &:not(:last-child)
+                border-bottom: none
+
+    .table__td
+        width: 100%
+        font-size: 14px
+        text-align: center
+        border-bottom: 2px solid #e7e7e7
+
+    .table__td-head
+        justify-content: center
+        padding: 0 5px
+
+    .table__row--bold
+        font-family: $montserrat-r
 
     /* MENU-INNER */
 
@@ -387,6 +442,65 @@
     .search-s__item
         margin-bottom: 25px
 
+    /* CATEGORY */
+    
+    .category-inner
+        padding-bottom: 0
+
+    .category-s__top
+        padding-left: 0
+
+    .category-s__list
+        width: 100%
+        max-width: 375px
+        margin: 0 auto 50px
+        +row-flex()
+
+    .category-s__item
+        width: 50%
+
+    .category-s__img
+        width: 100%
+        margin-left: auto
+        margin-right: auto
+          
+    .tabs__item
+        font-size: 13px
+
+    .tab-content__text
+        font-size: 14px
+
+    .tabs__item
+        display: flex
+        align-items: center
+        justify-content: center
+
+    /* CARD-SERVICE */
+
+    .card-service-inner
+        padding-bottom: 0
+
+    .card-service__text
+        margin-bottom: 25px
+
+    .set-images
+        margin-bottom: 20px
+
+    .set-images__left,
+    .set-images__right
+        width: 100%
+
+    .set-images__item--big,
+    .set-images__item
+        height: 0
+        padding-bottom: 42%
+
+    .set-images__title
+        font-size: 12px
+
+    .card-service__text
+        p
+            font-size: 13px
 
 @media #{$_xxs}
 

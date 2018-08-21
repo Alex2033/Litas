@@ -1,16 +1,29 @@
 .table
-    width: 100%
-    border: 2px solid #e7e7e7
+    margin-bottom: 55px
+    
+.table__row
+    +row-flex(flex-start, nowrap)
 
-.table__th,
-.table__td
-    padding: 0 25px
-    height: 46px
-    border: 2px solid #e7e7e7
-
-.table__th
-    text-align: left
-    max-width: 130px
+    &:last-child
+        .table__td
+            border-bottom: 2px solid #e7e7e7
 
 .table__td
-    width: calc(100% / 6)
+    width: calc((100% - 196px) / 6)
+    height: 48px
+    border-right: 2px solid #e7e7e7
+    border-top: 2px solid #e7e7e7
+    justify-content: center
+    display: flex
+    align-items: center
+    padding: 0 5px
+
+.table__td-head
+    border-left: 2px solid #e7e7e7
+    justify-content: flex-start
+    padding-left: 25px
+    width: 196px
+
+.table__row--bold,
+.table__header-item--bold
+    font-family: $montserrat-sb    

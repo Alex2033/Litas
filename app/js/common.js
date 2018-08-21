@@ -243,3 +243,9 @@ $(function() {
     } 
 
 });
+
+$(".tab-content").not(":first").hide();
+$(".tabs__item").click(function() {
+	$(".tabs__item").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab-content").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");

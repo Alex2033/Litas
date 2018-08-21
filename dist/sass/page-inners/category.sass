@@ -1,0 +1,28 @@
+.category-inner
+    padding-bottom: 70px
+    
+.category-s
+    padding-left: 40px
+    
+.category-s__top
+    +row-flex()
+    align-items: center
+    margin-bottom: 55px
+
+.category-s__item
+    position: relative
+    padding: 8px 0 8px 28px
+
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 10px
+        width: 3px
+        height: 11px
+        border: solid $accent
+        border-width: 0 1.5px 1.5px 0
+        transform: rotate(45deg)
+
+.category__text
+    margin-bottom: 70px

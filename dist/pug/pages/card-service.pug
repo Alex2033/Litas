@@ -1,0 +1,486 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container.services__sidebar-menu
+              .sidebar-menu__button.hidden-button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+              .sidebar-menu__button.services__sidebar-button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle.services__sidebar-toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Услуги
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="category.html") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+
+          .hidden-sidebar.services-hidden
+            ul.hidden-sidebar__list
+              li.sidebar__item
+                a.sidebar__link(href="#") Офсетная печать
+              li.sidebar__item
+                a.sidebar__link(href="card-service.html") Брошюровка
+              li.sidebar__item
+                a.sidebar__link(href="#") Фальцовка, биговка
+              li.sidebar__item
+                a.sidebar__link(href="#") Вырубка
+              li.sidebar__item
+                a.sidebar__link(href="#") Ламинация
+              li.sidebar__item
+                a.sidebar__link(href="#") Кашировка
+              li.sidebar__item
+                a.sidebar__link(href="#") Склейка
+              li.sidebar__item
+                a.sidebar__link(href="#") Термоусадка
+              li.sidebar__item
+                a.sidebar__link(href="#") Сверление отверстий
+        
+      // end sidebar-menu  
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.card-service-inner
+          .wrapper__container
+
+            // begin sidebar 
+            aside.sidebar
+              .sidebar__wrapper
+                h3.sidebar__title Услуги типографии
+                ul.sidebar__list
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Офсетная печать
+                    li.sidebar__item
+                        a.sidebar__link(href="card-service.html") Брошюровка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Фальцовка, биговка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Вырубка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Ламинация
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Кашировка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Склейка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Термоусадка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Сверление отверстий
+
+              .sidebar__wrapper
+                h3.sidebar__title Стоимость продукции
+                ul.sidebar__list
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Плакаты
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Листовки, бланки
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Буклеты
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Брошюры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Блокноты
+                    li.sidebar__item
+                        a.sidebar__link(href="category.html") Календари
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Упаковка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Упаковка для дисков
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Хедеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Шелфтокеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Воблеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Печать на конвертах
+            // end sidebar 
+
+            // begin main-content
+            main.inner-content
+
+              // begin breadcrumbs 
+              ul.breadcrumbs
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="services-page.html") Услуги типографии
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="card-services.html") Брошюровка
+              // end breadcrumbds 
+    
+              header.heading.page-inner__heading
+                .heading__line
+                h1.h2 Брошюровка
+                .heading__line
+
+              // begin card-service 
+              section.card-service
+
+                .set-images
+                    .set-images__left
+                        .set-images__item.set-images__item--big(style="background-image: url(img/card-service/big.jpg);")
+                            .set-images__panel
+                                h6.set-images__title Брошюровка на пружину
+                    .set-images__right
+                        .set-images__item(style="background-image: url(img/card-service/small-1.jpg);")
+                            .set-images__panel
+                                h6.set-images__title Брошюровка на термоклей
+                        .set-images__item(style="background-image: url(img/card-service/small-2.jpg);")
+                            .set-images__panel
+                                h6.set-images__title Брошюровка на скрепку
+
+                .card-service__text
+                  p.
+                    Брошюровкой называют технологический процесс подбора и последующего скрепления отпечатанных листов, в результате 
+                    которого они соединяются в брошюру  – документ, состоящий как минимум из четырех скрепленных блоков. Формат, 
+                    плотность и качество бумаги при этом не имеют никакого значения. Процедура брошюровки осуществляется на 
+                    специализированном полиграфическом оборудовании – биндере. Вначале он перфорирует бумагу, а затем вставляет в 
+                    полученные отверстия пружины соответствующего диаметра.
+
+                // begin tabs 
+                ul.tabs
+                  li.tabs__item Стоимость
+                  li.tabs__item Технические требования
+                // end tabs 
+
+                // begin tab-content 
+                .tab-content
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на пружину.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 130
+                      .table__td 200
+                      .table__td 270
+                      .table__td 340
+                      .table__td 410
+                      .table__td 580
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 160
+                      .table__td 230
+                      .table__td 300
+                      .table__td 370
+                      .table__td 440
+                      .table__td 620
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А3
+                      .table__td 300
+                      .table__td 360
+                      .table__td 420
+                      .table__td 480
+                      .table__td 540
+                      .table__td 820
+                  // end table 
+
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на термоклей.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 230
+                      .table__td 300
+                      .table__td 370
+                      .table__td 440
+                      .table__td 510
+                      .table__td 780
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 260
+                      .table__td 330
+                      .table__td 400
+                      .table__td 470
+                      .table__td 540
+                      .table__td 720
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А3
+                      .table__td 400
+                      .table__td 460
+                      .table__td 520
+                      .table__td 580
+                      .table__td 640
+                      .table__td 920
+                  // end table 
+
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на скрепку.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 110
+                      .table__td 130
+                      .table__td 150
+                      .table__td 190
+                      .table__td 230
+                      .table__td -
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 140
+                      .table__td 180
+                      .table__td 200
+                      .table__td 210
+                      .table__td 300
+                      .table__td -
+                  // end table 
+
+                // end tab-content 
+
+                // begin tab-content 
+                .tab-content
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на пружину.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 130
+                      .table__td 200
+                      .table__td 270
+                      .table__td 340
+                      .table__td 410
+                      .table__td 580
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 160
+                      .table__td 230
+                      .table__td 300
+                      .table__td 370
+                      .table__td 440
+                      .table__td 620
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А3
+                      .table__td 300
+                      .table__td 360
+                      .table__td 420
+                      .table__td 480
+                      .table__td 540
+                      .table__td 820
+                  // end table 
+
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на термоклей.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 230
+                      .table__td 300
+                      .table__td 370
+                      .table__td 440
+                      .table__td 510
+                      .table__td 780
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 260
+                      .table__td 330
+                      .table__td 400
+                      .table__td 470
+                      .table__td 540
+                      .table__td 720
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А3
+                      .table__td 400
+                      .table__td 460
+                      .table__td 520
+                      .table__td 580
+                      .table__td 640
+                      .table__td 920
+                  // end table 
+
+                  .tab-content__text
+                    b Брошюровка:
+                    |  на скрепку.
+                    br
+                    b Формат:
+                    |  А5; А4; А3.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Кол-во листов
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за A5
+                      .table__td 110
+                      .table__td 130
+                      .table__td 150
+                      .table__td 190
+                      .table__td 230
+                      .table__td -
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за А4
+                      .table__td 140
+                      .table__td 180
+                      .table__td 200
+                      .table__td 210
+                      .table__td 300
+                      .table__td -
+                  // end table 
+
+                // end tab-content 
+
+              // end card-service 
+               
+    
+            // end main-content 
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')

@@ -1,0 +1,44 @@
+.card-service
+    padding-left: 40px
+    
+.set-images
+    +row-flex()
+    margin-bottom: 40px
+    
+.set-images__left,
+.set-images__right
+    width: calc(50% - 8px)
+
+.set-images__right
+    margin-bottom: -15px
+
+.set-images__item
+    position: relative
+    height: 0
+    padding-bottom: 45%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 15px
+
+.set-images__item--big
+    height: 100%
+    padding-bottom: 0
+
+.set-images__panel
+    display: block
+    max-width: 340px
+    position: absolute
+    bottom: 10px
+    left: 15px
+    padding: 10px 16px
+    box-shadow: 2px 1px 8px rgba(153, 153, 153, 0.5)
+    background-color: $light
+
+.set-images__title
+    font-size: 16px
+    font-family: $gotham-b
+    color: $dark
+
+.card-service__text
+    margin-bottom: 80px

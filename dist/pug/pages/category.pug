@@ -106,15 +106,15 @@ html(lang='ru')
                     полиграфической продукции объясняется и ее универсальностью. В зависимости от задачи заказчика, можно изготовить 
                     большие квартальные календари с логотипом или маленькие карманные календарики с фирменной символикой.
 
-                // begin category-tabs 
-                ul.category-tabs
-                  li.category-tabs__item Стоимость
-                  li.category-tabs__item Технические требования
-                // end category-tabs 
+                // begin tabs 
+                ul.tabs
+                  li.tabs__item Стоимость
+                  li.tabs__item Технические требования
+                // end tabs 
 
-                // begin category-tab-content 
-                .category-tab-content
-                  .category-tab-content__text
+                // begin tab-content 
+                .tab-content
+                  .tab-content__text
                     b Календарь:
                     |  ТРИО на 3-х пружинах.
                     br
@@ -126,34 +126,34 @@ html(lang='ru')
                     sup 2
 
                   // begin table 
-                  table.table
-                    tr.table__row
-                      th.table__th Тираж
-                      td.table__td 100
-                      td.table__td 200
-                      td.table__td 300
-                      td.table__td 400
-                      td.table__td 500
-                      td.table__td 1000
-                    tr.table__row
-                      th.table__th Цена у.е. за 1 шт.
-                      td.table__td 4,9
-                      td.table__td 3,75
-                      td.table__td 3,4
-                      td.table__td 3,09
-                      td.table__td 2,86
-                      td.table__td 2,3
-                    tr.table__row
-                      th.table__th Цена у.е. за тираж
-                      td.table__td 490
-                      td.table__td 750
-                      td.table__td 1020
-                      td.table__td 1235
-                      td.table__td 1430
-                      td.table__td 2300
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Тираж
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за 1 шт.
+                      .table__td 4,9
+                      .table__td 3,75
+                      .table__td 3,4
+                      .table__td 3,09
+                      .table__td 2,86
+                      .table__td 2,3
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за тира
+                      .table__td 490
+                      .table__td 750
+                      .table__td 1020
+                      .table__td 1235
+                      .table__td 1430
+                      .table__td 2300
                   // end table 
 
-                  .category-tab-content__text
+                  .tab-content__text
                     b Календарь:
                     |  ТРИО на 1 пружине.
                     br
@@ -165,34 +165,117 @@ html(lang='ru')
                     sup 2
 
                   // begin table 
-                  table(style="cellpadding: 0; cellcollapse: 0; cellspacing: 0;").table
-                    tr.table__row
-                      th.table__th Тираж
-                      td.table__td 100
-                      td.table__td 200
-                      td.table__td 300
-                      td.table__td 400
-                      td.table__td 500
-                      td.table__td 1000
-                    tr.table__row
-                      th.table__th Цена у.е. за 1 шт.
-                      td.table__td 4,5
-                      td.table__td 3,1
-                      td.table__td 2,7
-                      td.table__td 2,6
-                      td.table__td 2,4
-                      td.table__td 2,0
-                    tr.table__row
-                      th.table__th Цена у.е. за тираж
-                      td.table__td 450
-                      td.table__td 620
-                      td.table__td 810
-                      td.table__td 1040
-                      td.table__td 1200
-                      td.table__td 2000
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Тираж
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за 1 шт.
+                      .table__td 4,5
+                      .table__td 3,1
+                      .table__td 2,7
+                      .table__td 2,6
+                      .table__td 2,4
+                      .table__td 2,0
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за тира
+                      .table__td 450
+                      .table__td 620
+                      .table__td 810
+                      .table__td 1040
+                      .table__td 1200
+                      .table__td 2000
                   // end table 
 
-                // end category-tab-content 
+                // end tab-content 
+
+                // begin tab-content 
+                .tab-content
+                  .tab-content__text
+                    b Календарь:
+                    |  ТРИО на 3-х пружинах.
+                    br
+                    b Печать:
+                    |  4+0, Календарная сетка 2+0,
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Тираж
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за 1 шт.
+                      .table__td 4,5
+                      .table__td 3,1
+                      .table__td 2,7
+                      .table__td 2,6
+                      .table__td 2,4
+                      .table__td 2,0
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за тира
+                      .table__td 450
+                      .table__td 620
+                      .table__td 810
+                      .table__td 1040
+                      .table__td 1200
+                      .table__td 2000
+                  // end table 
+
+                  .tab-content__text
+                    b Календарь:
+                    |  ТРИО на 1 пружине.
+                    br
+                    b Печать:
+                    |  4+0, Календарная сетка 2+0.
+                    br
+                    b Подложка:
+                    |  картон 255 гр/м
+                    sup 2
+
+                  // begin table 
+                  .table
+                    .table__row.table__row--bold
+                      .table__td.table__td-head Тираж
+                      .table__td 100
+                      .table__td 200
+                      .table__td 300
+                      .table__td 400
+                      .table__td 500
+                      .table__td 1000
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за 1 шт.
+                      .table__td 4,5
+                      .table__td 3,1
+                      .table__td 2,7
+                      .table__td 2,6
+                      .table__td 2,4
+                      .table__td 2,0
+                    .table__row
+                      .table__td.table__td-head Цена у.е. за тира
+                      .table__td 450
+                      .table__td 620
+                      .table__td 810
+                      .table__td 1040
+                      .table__td 1200
+                      .table__td 2000
+                  // end table 
+
+                // end tab-content
+
               // end category-s 
     
             // end main-content
