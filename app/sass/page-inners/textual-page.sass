@@ -1,0 +1,84 @@
+.textual-inner
+    padding-bottom: 0
+    
+.textual__subtitle
+    font-size: 24px
+
+.textual__h3,
+.textual__h4
+    margin-bottom: 20px
+
+.textual__h3
+    font-size: 18px
+
+.textual__h4
+    font-weight: 400
+    position: relative
+    padding-left: 28px
+
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 2px
+        width: 3px
+        height: 11px
+        border: solid $accent
+        border-width: 0 1.5px 1.5px 0
+        transform: rotate(45deg)
+    
+.textual__item
+    margin-bottom: 35px
+
+.textual__link
+    color: $color-main
+
+    &:hover
+        color: $accent
+        text-decoration: underline
+
+.textual__link--bold
+    font-weight: 700
+
+    &:hover
+        color: $color-main
+
+.textual__links-item
+    margin-bottom: 15px
+
+.textual__links
+    margin-bottom: 30px
+
+.textual__link--underline
+    color: $accent
+    text-decoration: underline
+
+    &:hover
+        color: $blue-dark
+
+.textual__list-heading
+    font-size: 16px
+    margin-bottom: 15px
+
+.textual__list-item
+    position: relative
+    padding: 8px 0 8px 28px
+
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 10px
+        width: 3px
+        height: 11px
+        border: solid $accent
+        border-width: 0 1.5px 1.5px 0
+        transform: rotate(45deg)
+
+.textual__list
+    margin-bottom: 45px
+
+.textual__table-h3
+    text-transform: uppercase
+    font-size: 16px
+    margin-bottom: 25px
