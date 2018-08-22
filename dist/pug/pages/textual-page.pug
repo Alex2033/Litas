@@ -93,7 +93,7 @@ html(lang='ru')
         // Для затемнения контента при выведении меню на экран
         .hide 
 
-        .page-inner.card-service-inner
+        .page-inner.textual-inner
           .wrapper__container
 
             // begin sidebar 
@@ -152,316 +152,115 @@ html(lang='ru')
             // begin main-content
             main.inner-content
 
-              // begin breadcrumbs 
-              ul.breadcrumbs
-                li.breadcrumbs__item
-                  a.breadcrumbs__link(href="index.html") Главная
-                li.breadcrumbs__item
-                  a.breadcrumbs__link(href="services-page.html") Услуги типографии
-                li.breadcrumbs__item
-                  a.breadcrumbs__link(href="card-services.html") Брошюровка
-              // end breadcrumbds 
+                // begin breadcrumbs 
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.html") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="services-page.html") Услуги типографии
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="textual-page.html") Крошка
+                // end breadcrumbds 
     
-              header.heading.page-inner__heading
-                .heading__line
-                h1.h2 ЗАГОЛОВОК H1
-                .heading__line
+                header.heading.page-inner__heading
+                    .heading__line
+                    h1.h2 ЗАГОЛОВОК H1
+                    .heading__line
 
-              .finding__heading
-                h2.finding__title ЗАГОЛОВОК H2
+                .finding__heading
+                    h2.finding__title.textual__subtitle ЗАГОЛОВОК H2
 
-              // begin card-service 
-              section.card-service
+                // begin textual 
+                section.textual
 
-                .card-service__text
-                  p.
-                    Брошюровкой называют технологический процесс подбора и последующего скрепления отпечатанных листов, в результате 
-                    которого они соединяются в брошюру  – документ, состоящий как минимум из четырех скрепленных блоков. Формат, 
-                    плотность и качество бумаги при этом не имеют никакого значения. Процедура брошюровки осуществляется на 
-                    специализированном полиграфическом оборудовании – биндере. Вначале он перфорирует бумагу, а затем вставляет в 
-                    полученные отверстия пружины соответствующего диаметра.
+                h3.textual__h3 Заголовок H3
 
-                // begin tabs 
-                ul.tabs
-                  li.tabs__item Стоимость
-                  li.tabs__item Технические требования
-                // end tabs 
+                .textual__item
+                    p.
+                        Брошюровка на металлическую пружину имеет более элегантный вид по сравнению с брошюровкой на 
+                        пластиковую пружину. В основном он применяется для брошюровки продукции презентационного характера. 
+                        В стоимость брошюровки на металлическую пружину включены обложки: плотная прозрачная плёнка для верхней 
+                        обложки и плотный картон для нижней. 
 
-                // begin tab-content 
-                .tab-content
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на пружину.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
+                h4.textual__h4 Заголовок H4
 
-                  // begin table 
-                  .table
+                .textual__item
+                    p.
+                        Брошюровка на металлическую пружину имеет более элегантный вид по сравнению с брошюровкой на 
+                        пластиковую пружину. В основном он применяется для брошюровки продукции презентационного характера. 
+                        В стоимость брошюровки на металлическую пружину включены обложки: плотная прозрачная плёнка для верхней 
+                        обложки и плотный картон для нижней. 
+                
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 1
+                    li.textual__links-item
+                        a(href="#").textual__link Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link Гиперссылка ховер
+
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 2
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--underline Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--underline Гиперссылка ховер
+
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 3
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка ховер
+
+                h3.textual__list-heading Маркированный список
+                ul.textual__list
+                    li.textual__list-item Квартальные
+                    li.textual__list-item Настенные
+                    li.textual__list-item Карманные
+                    li.textual__list-item Настольные
+
+                h3.textual__table-h3 Таблица
+                // begin table 
+                .table
                     .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
+                        .table__td.table__td-head Тираж
+                        .table__td 100
+                        .table__td 200
+                        .table__td 300
+                        .table__td 400
+                        .table__td 500
+                        .table__td 1000
                     .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 130
-                      .table__td 200
-                      .table__td 270
-                      .table__td 340
-                      .table__td 410
-                      .table__td 580
+                        .table__td.table__td-head Цена у.е. за 1 шт.
+                        .table__td 4,9
+                        .table__td 3,75
+                        .table__td 3,4
+                        .table__td 3,09
+                        .table__td 2,86
+                        .table__td 2,3
                     .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 160
-                      .table__td 230
-                      .table__td 300
-                      .table__td 370
-                      .table__td 440
-                      .table__td 620
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А3
-                      .table__td 300
-                      .table__td 360
-                      .table__td 420
-                      .table__td 480
-                      .table__td 540
-                      .table__td 820
-                  // end table 
+                        .table__td.table__td-head Цена у.е. за тираж
+                        .table__td 490
+                        .table__td 750
+                        .table__td 1020
+                        .table__td 1235
+                        .table__td 1430
+                        .table__td 2300
+                // end table 
 
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на термоклей.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
+                // begin set-images 
+                .set-images
+                    .set-images__left
+                        .set-images__item.set-images__item--big(style="background-image: url(img/card-service/big.jpg);")
+                    .set-images__right
+                        .set-images__item(style="background-image: url(img/card-service/small-1.jpg);")
+                        .set-images__item(style="background-image: url(img/card-service/small-2.jpg);")
+                // end set-images 
 
-                  // begin table 
-                  .table
-                    .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 230
-                      .table__td 300
-                      .table__td 370
-                      .table__td 440
-                      .table__td 510
-                      .table__td 780
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 260
-                      .table__td 330
-                      .table__td 400
-                      .table__td 470
-                      .table__td 540
-                      .table__td 720
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А3
-                      .table__td 400
-                      .table__td 460
-                      .table__td 520
-                      .table__td 580
-                      .table__td 640
-                      .table__td 920
-                  // end table 
-
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на скрепку.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
-
-                  // begin table 
-                  .table
-                    .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 110
-                      .table__td 130
-                      .table__td 150
-                      .table__td 190
-                      .table__td 230
-                      .table__td -
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 140
-                      .table__td 180
-                      .table__td 200
-                      .table__td 210
-                      .table__td 300
-                      .table__td -
-                  // end table 
-
-                // end tab-content 
-
-                // begin tab-content 
-                .tab-content
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на пружину.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
-
-                  // begin table 
-                  .table
-                    .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 130
-                      .table__td 200
-                      .table__td 270
-                      .table__td 340
-                      .table__td 410
-                      .table__td 580
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 160
-                      .table__td 230
-                      .table__td 300
-                      .table__td 370
-                      .table__td 440
-                      .table__td 620
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А3
-                      .table__td 300
-                      .table__td 360
-                      .table__td 420
-                      .table__td 480
-                      .table__td 540
-                      .table__td 820
-                  // end table 
-
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на термоклей.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
-
-                  // begin table 
-                  .table
-                    .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 230
-                      .table__td 300
-                      .table__td 370
-                      .table__td 440
-                      .table__td 510
-                      .table__td 780
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 260
-                      .table__td 330
-                      .table__td 400
-                      .table__td 470
-                      .table__td 540
-                      .table__td 720
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А3
-                      .table__td 400
-                      .table__td 460
-                      .table__td 520
-                      .table__td 580
-                      .table__td 640
-                      .table__td 920
-                  // end table 
-
-                  .tab-content__text
-                    b Брошюровка:
-                    |  на скрепку.
-                    br
-                    b Формат:
-                    |  А5; А4; А3.
-                    br
-                    b Подложка:
-                    |  картон 255 гр/м
-                    sup 2
-
-                  // begin table 
-                  .table
-                    .table__row.table__row--bold
-                      .table__td.table__td-head Кол-во листов
-                      .table__td 100
-                      .table__td 200
-                      .table__td 300
-                      .table__td 400
-                      .table__td 500
-                      .table__td 1000
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за A5
-                      .table__td 110
-                      .table__td 130
-                      .table__td 150
-                      .table__td 190
-                      .table__td 230
-                      .table__td -
-                    .table__row
-                      .table__td.table__td-head Цена у.е. за А4
-                      .table__td 140
-                      .table__td 180
-                      .table__td 200
-                      .table__td 210
-                      .table__td 300
-                      .table__td -
-                  // end table 
-
-                // end tab-content 
-
-              // end card-service 
+                // end textual 
                
     
             // end main-content 
