@@ -70,19 +70,13 @@ gulp.task('transfer', function(){
         .pipe(gulp.dest("dist"))
 });
 
-gulp.task('html-minify', function() {
-	return gulp.src('app/*.html')
-	  .pipe(htmlmin({collapseWhitespace: true}))
-	  .pipe(gulp.dest('dist'));
-  });
-
 gulp.task('imgmin', () =>
   gulp.src('app/img/**/*')
 	  .pipe(imagemin())
 	  .pipe(gulp.dest('dist/img'))
 );
 
-gulp.task('build', gulpSequence('transfer', 'html-minify', 'imgmin'));
+gulp.task('build', gulpSequence('transfer', 'imgmin'));
 
 gulp.task('rsync', function() {
 	return gulp.src('app/**')

@@ -208,12 +208,16 @@ $(function() {
             center: [59.907271, 30.262553],
             // коэффициент масштабирования
             zoom: 14,
-            controls: []
+            controls: ['zoomControl']
             // тип карты, по умолчанию используется тип карты "схема"
             //type: "yandex#map",
         });
         myMap.behaviors.disable('scrollZoom');
-     
+
+        if ($(window).width() <= 767) {
+            myMap.behaviors.disable('drag');
+        }
+    
         /*myMap.controls.add("zoomControl", {
             position: {top: 15, left: 15}
         });*/
