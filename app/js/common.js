@@ -1,5 +1,5 @@
 $('.order-btn').click(function() {
-
+    $(window).scrollTop(0);
     $('.request').fadeIn(200);
 
 });
@@ -176,7 +176,6 @@ $('.hide').click(function() {
 
 $('.sidebar-menu__button').click(function() {
     $('.hidden-production').slideToggle(300);
-
 });
 
 $('.services__sidebar-toggle').click(function() {
