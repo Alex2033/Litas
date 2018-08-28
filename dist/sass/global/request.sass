@@ -7,6 +7,7 @@
     width: 100%
     height: 100%
     z-index: 1000
+    overflow: hidden
     display: none
 
 .request__background
@@ -65,7 +66,7 @@
     display: block
     margin-bottom: 6px
     text-transform: uppercase
-
+    
 .order-form__item
     margin-bottom: 20px
     display: block
@@ -226,6 +227,14 @@
 
 .order-form__select
     cursor: pointer
+    position: relative
+    appearance: none
+    background-image: url(../img/request-form/angle.png)
+    background-repeat: no-repeat
+    background-position: 97% 44%
+
+    &::-ms-expand
+        display: none
 
     option
         font-size: 14px
