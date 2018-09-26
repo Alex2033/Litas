@@ -36,6 +36,18 @@
 .pagination__btn-prev
     margin-right: 5px
 
+.pagination__btn-next
+    margin-left: 5px
+    &::before
+        content: ''
+        background-color: $accent
+        height: 70%
+        width: 1.5px
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
 .pagination__link
     display: block
     padding: 0 2px
@@ -47,16 +59,3 @@
 
     &:hover, &.active
         color: $accent
-
-    &:last-of-type
-        padding-right: 5px
-        &::after
-            content: ''
-            background-color: $accent
-            height: 70%
-            width: 1.5px
-            position: absolute
-            top: 50%
-            right: 0
-            transform: translateY(-50%)
-    
