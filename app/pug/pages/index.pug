@@ -4,7 +4,9 @@ html(lang='ru')
     title Литас
     include ../modules/head
 
-  body
+  body.is-home
+
+    .request-background
 
     // begin wrapper
     .wrapper
@@ -46,55 +48,57 @@ html(lang='ru')
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/1.png", alt="Production image")
+                    img(src="img/production/1.svg", alt="Production image")
                   span.products__text Плакаты
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/2.png", alt="Production image")
+                    img(src="img/production/2.svg", alt="Production image")
                   span.products__text Листовки
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/3.png", alt="Production image")
+                    img(src="img/production/3.svg", alt="Production image")
                   span.products__text Буклеты
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/4.png", alt="Production image")
+                    img(src="img/production/4.svg", alt="Production image")
                   span.products__text Брошюры
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/5.png", alt="Production image")
+                    img(src="img/production/5.svg", alt="Production image")
                   span.products__text Блокноты
               li.products__item
                 a.products__link.item-hover(href="category.html")
                   span.products__img
-                    img(src="img/production/6.png", alt="Production image")
+                    img(src="img/production/6.svg", alt="Production image")
                   span.products__text Календари
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/7.png", alt="Production image")
+                    img(src="img/production/7.svg", alt="Production image")
                   span.products__text Папки
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/8.png", alt="Production image")
+                    img(src="img/production/8.svg", alt="Production image")
                   span.products__text Упаковка
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/9.png", alt="Production image")
+                    img(src="img/production/9.svg", alt="Production image")
                   span.products__text
                     span.products__text-line Хедеры,
                     span.products__text-line Шелфтокеры, Воблеры
               li.products__item
                 a.products__link.item-hover(href="#")
                   span.products__img
-                    img(src="img/production/10.png", alt="Production image")
-                  span.products__text Печать на конвертах
+                    img(src="img/production/10.svg", alt="Production image")
+                  span.products__text
+                    span.products__text-line Другое
+                    span.products__text-line (Нестандартные проекты)
             // end products 
         // end production 
 
@@ -139,42 +143,42 @@ html(lang='ru')
             ul.features__list
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/1.png", alt="Features Image")
+                  img(src="img/features/1.svg", alt="Features Image")
                 h2.features__title Без посредников
                 .features__text
                   p.
                     Продукция изготавливается на собственном производстве, мы не передаем Ваши заказы в субподряд
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/2.png", alt="Features Image")
+                  img(src="img/features/2.svg", alt="Features Image")
                 h2.features__title Отличная цена
                 .features__text
                   p.
                     Продукция высокого качества по приемлемой цене. Постоянным клиентам скидки и отсрочки платежей
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/3.png", alt="Features Image")
+                  img(src="img/features/3.svg", alt="Features Image")
                 h2.features__title Транспортная и пешая доступность
                 .features__text
                   p.
                     Рядом съезд с ЗСД, 15 минут пешком от м. Нарвская, 10 минут на общественном транспорте от  м. Балтийская
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/4.png", alt="Features Image")
+                  img(src="img/features/4.svg", alt="Features Image")
                 h2.features__title Гарантированные сроки
                 .features__text
                   p.
                     Мы не берем заказ в работу, если не готовы выполнить его в оговоренный срок
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/5.png", alt="Features Image")
+                  img(src="img/features/5.svg", alt="Features Image")
                 h2.features__title Доставка
                 .features__text
                   p.
                     Доставка тиражей в пределах СПб. От вас потребуется только указать удобную дату и адрес доставки
               li.features__item.item-hover
                 .features__img
-                  img(src="img/features/6.png", alt="Features Image")
+                  img(src="img/features/6.svg", alt="Features Image")
                 h2.features__title Опыт
                 .features__text
                   p.
@@ -194,44 +198,44 @@ html(lang='ru')
               .orders__step.orders__step--big
                 .orders__item.item-hover
                   .orders__number 1
-                  img(src="img/order/1.png").orders__img
+                  img(src="img/order/1.svg").orders__img
                 .orders__text
                   p Вы присылаете заявку на расчет
               .orders__step.orders__step--big
                 .orders__item.item-hover
                   .orders__number 2
-                  img(src="img/order/2.png").orders__img
+                  img(src="img/order/2.svg").orders__img
                 .orders__text
                   p Мы составляем смету, предлагая Вам варианты решений
               .orders__step.orders__step--big
                 .orders__item.item-hover
                   .orders__number 3
-                  img(src="img/order/3.png").orders__img
+                  img(src="img/order/3.svg").orders__img
                 .orders__text
                   p Вы утверждаете один из вариантов решений
 
               .orders__step
                 .orders__item.item-hover
                   .orders__number 4
-                  img(src="img/order/4.png").orders__img
+                  img(src="img/order/4.svg").orders__img
                 .orders__text
                   p Вы присылаете оригинал макет в печать
               .orders__step
                 .orders__item.item-hover
                   .orders__number 5
-                  img(src="img/order/5.png").orders__img
+                  img(src="img/order/5.svg").orders__img
                 .orders__text
                   p Вы оплачиваете заказ и утверждаете оригинал макет в печать 
               .orders__step
                 .orders__item.item-hover
                   .orders__number 6
-                  img(src="img/order/6.png").orders__img
+                  img(src="img/order/6.svg").orders__img
                 .orders__text
                   p Мы изготавливаем заказ в установленный срок 
               .orders__step
                 .orders__item.item-hover
                   .orders__number 7
-                  img(src="img/order/7.png").orders__img
+                  img(src="img/order/7.svg").orders__img
                 .orders__text
                   p Мы доставляем Вам заказ или Вы забираете его самостоятельно
 

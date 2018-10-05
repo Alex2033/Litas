@@ -19,7 +19,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
+  <body class="is-inner">
+    <div class="request-background"></div>
     <!-- begin wrapper-->
     <div class="wrapper">
       <div class="wrapper__top inner-wrapper__top">
@@ -135,10 +136,9 @@
       <!-- end sidebar-menu -->
       <!-- begin request-->
       <div class="request">
-        <div class="request__background"></div>
+        <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
         <!-- begin order-form-->
         <form class="order-form request__form">
-          <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
           <div class="heading order-form__heading">
             <div class="heading__line"></div>
             <h2 class="h2 order-form__title">Отправить запрос</h2>
@@ -317,7 +317,7 @@
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Хедеры</a></li>
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Шелфтокеры</a></li>
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Воблеры</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" href="#">Печать на конвертах</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="#">Другое (Нестандартные проекты)</a></li>
                 </ul>
               </div>
             </aside>
@@ -543,9 +543,7 @@
             <!-- end socials -->
             <!-- begin copyright -->
             <div class="copyright">
-              <div class="copyright__line">© 2018</div>
-              <div class="copyright__line">Создание сайта: Волекс</div>
-              <div class="copyright__line">Результаты СОУТ</div>
+              <div class="copyright__line">© 2018</div><a class="copyright__link" href="www.volex.su">Создание сайта: Волекс</a><a class="copyright__link" href="textual-page.html">Результаты СОУТ</a>
             </div>
             <!-- end copyright -->
           </div>

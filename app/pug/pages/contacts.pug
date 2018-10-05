@@ -4,7 +4,9 @@ html(lang='ru')
     title Литас
     include ../modules/head
 
-  body
+  body.is-inner
+
+    .request-background
 
     // begin wrapper
     .wrapper
@@ -144,7 +146,17 @@ html(lang='ru')
 
                   .finding__set
                     .finding__item(style="background-image: url(img/contacts-page/1.jpg);")
+                      .finding__body
+                        h3.finding__title
+                        ul.finding__list
+                          li.finding__list-item.
+                            1) Проезжаем через грузовые ворота со шлагбаумом, говорим, что в Типографию Литас+.(нужно громко сказать "ЛИТАС ПЛЮС")
+                          li.finding__list-item
+                          li.finding__list-item
                     .finding__item(style="background-image: url(img/contacts-page/2.jpg);")
+                      .finding__body
+                        h3.finding__title
+                        ul.finding__list
                     .finding__item.finding__item--big(style="background-image: url(img/contacts-page/3.jpg);")
                     .finding__item(style="background-image: url(img/contacts-page/4.jpg);")
                     .finding__item(style="background-image: url(img/contacts-page/5.jpg);")

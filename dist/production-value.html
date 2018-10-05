@@ -19,7 +19,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
+  <body class="is-inner">
+    <div class="request-background"></div>
     <!-- begin wrapper-->
     <div class="wrapper">
       <div class="wrapper__top inner-wrapper__top">
@@ -127,7 +128,7 @@
               <li class="hidden-sidebar__item"><a class="hidden-sidebar__link" href="#">Хедеры</a></li>
               <li class="hidden-sidebar__item"><a class="hidden-sidebar__link" href="#">Шелфтокеры</a></li>
               <li class="hidden-sidebar__item"><a class="hidden-sidebar__link" href="#">Воблеры</a></li>
-              <li class="hidden-sidebar__item"><a class="hidden-sidebar__link" href="#">Печать на конвертах</a></li>
+              <li class="hidden-sidebar__item"><a class="hidden-sidebar__link" href="#">Другое (Нестандартные проекты)</a></li>
             </ul>
           </div>
         </div>
@@ -135,10 +136,9 @@
       <!-- end sidebar-menu -->
       <!-- begin request-->
       <div class="request">
-        <div class="request__background"></div>
+        <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
         <!-- begin order-form-->
         <form class="order-form request__form">
-          <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
           <div class="heading order-form__heading">
             <div class="heading__line"></div>
             <h2 class="h2 order-form__title">Отправить запрос</h2>
@@ -317,7 +317,7 @@
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Хедеры</a></li>
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Шелфтокеры</a></li>
                   <li class="sidebar__item"><a class="sidebar__link" href="#">Воблеры</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link" href="#">Печать на конвертах</a></li>
+                  <li class="sidebar__item"><a class="sidebar__link" href="#">Другое (Нестандартные проекты)</a></li>
                 </ul>
               </div>
             </aside>
@@ -338,88 +338,37 @@
               <!-- begin production-value -->
               <section class="production-value"> 
                 <!-- begin cards -->
-                <ul class="cards production-value__cards">
-                  <li class="card item-hover production-value__item">
+                <ul class="cards production-value__cards"><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/1.png" alt="Production image"></div>
                     <h6 class="card__title">Плакаты</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">10 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">400 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">10 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">400 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/2.png" alt="Production image"></div>
                     <h6 class="card__title">Листовки</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">100 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">3018 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">100 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">3018 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/3.png" alt="Production image"></div>
                     <h6 class="card__title">Буклеты</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">100 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">3113 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">100 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">3113 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/4.png" alt="Production image"></div>
                     <h6 class="card__title">Брошюры</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">100 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">3018 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">100 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">3018 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/6.png" alt="Production image"></div>
                     <h6 class="card__title">Календари</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">100 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">520 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">100 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">520 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/5.png" alt="Production image"></div>
                     <h6 class="card__title">Папки</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">20 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">1800 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">20 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">1800 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/8.png" alt="Production image"></div>
                     <h6 class="card__title">Упаковка</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">10 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">2000 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">10 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">2000 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/9.png" alt="Production image"></div>
                     <h6 class="card__title">Хедеры<br> шелфтокеры, воблеры</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">50 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">1000 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">50 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">1000 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
                     <div class="card__img"><img src="img/production/5.png" alt="Production image"></div>
                     <h6 class="card__title">Блокноты</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">5 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">600 р.</a></div>
-                    </div>
-                  </li>
-                  <li class="card item-hover production-value__item">
-                    <div class="card__img"><img src="img/production/10.png" alt="Production image"></div>
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">5 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">600 р.</span></span></div></a><a class="card item-hover production-value__item" href="#">
+                    <div class="card__img"><img src="img/production/10.svg" alt="Production image"></div>
                     <h6 class="card__title">Другое<br> (Нестандартные проекты)</h6>
-                    <div class="card__text">
-                      <div class="card__text-line">Тираж, от <a class="card__link" href="#">10 экз.</a></div>
-                      <div class="card__text-line">Стоимость, от <a class="card__link" href="#">300 р.</a></div>
-                    </div>
-                  </li>
-                </ul>
+                    <div class="card__text"><span class="card__text-line">Тираж, от <span class="card__numbers">10 экз.</span></span><span class="card__text-line">Стоимость, от <span class="card__numbers">300 р.</span></span></div></a></ul>
                 <!-- end cards -->
               </section>
               <!-- end production-value  -->
@@ -465,9 +414,7 @@
             <!-- end socials -->
             <!-- begin copyright -->
             <div class="copyright">
-              <div class="copyright__line">© 2018</div>
-              <div class="copyright__line">Создание сайта: Волекс</div>
-              <div class="copyright__line">Результаты СОУТ</div>
+              <div class="copyright__line">© 2018</div><a class="copyright__link" href="www.volex.su">Создание сайта: Волекс</a><a class="copyright__link" href="textual-page.html">Результаты СОУТ</a>
             </div>
             <!-- end copyright -->
           </div>

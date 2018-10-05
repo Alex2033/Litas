@@ -19,7 +19,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
+  <body class="is-home">
+    <div class="request-background"></div>
     <!-- begin wrapper-->
     <div class="wrapper">
       <div class="wrapper__top">
@@ -103,10 +104,9 @@
       </div>
       <!-- begin request-->
       <div class="request">
-        <div class="request__background"></div>
+        <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
         <!-- begin order-form-->
         <form class="order-form request__form">
-          <button class="exit-btn" type="button"><img src="img/request-form/exit.png" alt="Exit image"></button>
           <div class="heading order-form__heading">
             <div class="heading__line"></div>
             <h2 class="h2 order-form__title">Отправить запрос</h2>
@@ -289,16 +289,16 @@
           <div class="production__container">
             <!-- begin products-->
             <ul class="products">
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/1.png" alt="Production image"></span><span class="products__text">Плакаты</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/2.png" alt="Production image"></span><span class="products__text">Листовки</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/3.png" alt="Production image"></span><span class="products__text">Буклеты</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/4.png" alt="Production image"></span><span class="products__text">Брошюры</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/5.png" alt="Production image"></span><span class="products__text">Блокноты</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="category.html"><span class="products__img"><img src="img/production/6.png" alt="Production image"></span><span class="products__text">Календари</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/7.png" alt="Production image"></span><span class="products__text">Папки</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/8.png" alt="Production image"></span><span class="products__text">Упаковка</span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/9.png" alt="Production image"></span><span class="products__text"><span class="products__text-line">Хедеры,</span><span class="products__text-line">Шелфтокеры, Воблеры</span></span></a></li>
-              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/10.png" alt="Production image"></span><span class="products__text">Печать на конвертах</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/1.svg" alt="Production image"></span><span class="products__text">Плакаты</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/2.svg" alt="Production image"></span><span class="products__text">Листовки</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/3.svg" alt="Production image"></span><span class="products__text">Буклеты</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/4.svg" alt="Production image"></span><span class="products__text">Брошюры</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/5.svg" alt="Production image"></span><span class="products__text">Блокноты</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="category.html"><span class="products__img"><img src="img/production/6.svg" alt="Production image"></span><span class="products__text">Календари</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/7.svg" alt="Production image"></span><span class="products__text">Папки</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/8.svg" alt="Production image"></span><span class="products__text">Упаковка</span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/9.svg" alt="Production image"></span><span class="products__text"><span class="products__text-line">Хедеры,</span><span class="products__text-line">Шелфтокеры, Воблеры</span></span></a></li>
+              <li class="products__item"><a class="products__link item-hover" href="#"><span class="products__img"><img src="img/production/10.svg" alt="Production image"></span><span class="products__text"><span class="products__text-line">Другое</span><span class="products__text-line">(Нестандартные проекты)</span></span></a></li>
             </ul>
             <!-- end products -->
           </div>
@@ -346,42 +346,42 @@
           <div class="features__container">
             <ul class="features__list">
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/1.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/1.svg" alt="Features Image"></div>
                 <h2 class="features__title">Без посредников</h2>
                 <div class="features__text">
                   <p>Продукция изготавливается на собственном производстве, мы не передаем Ваши заказы в субподряд</p>
                 </div>
               </li>
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/2.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/2.svg" alt="Features Image"></div>
                 <h2 class="features__title">Отличная цена</h2>
                 <div class="features__text">
                   <p>Продукция высокого качества по приемлемой цене. Постоянным клиентам скидки и отсрочки платежей</p>
                 </div>
               </li>
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/3.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/3.svg" alt="Features Image"></div>
                 <h2 class="features__title">Транспортная и пешая доступность</h2>
                 <div class="features__text">
                   <p>Рядом съезд с ЗСД, 15 минут пешком от м. Нарвская, 10 минут на общественном транспорте от  м. Балтийская</p>
                 </div>
               </li>
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/4.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/4.svg" alt="Features Image"></div>
                 <h2 class="features__title">Гарантированные сроки</h2>
                 <div class="features__text">
                   <p>Мы не берем заказ в работу, если не готовы выполнить его в оговоренный срок</p>
                 </div>
               </li>
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/5.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/5.svg" alt="Features Image"></div>
                 <h2 class="features__title">Доставка</h2>
                 <div class="features__text">
                   <p>Доставка тиражей в пределах СПб. От вас потребуется только указать удобную дату и адрес доставки</p>
                 </div>
               </li>
               <li class="features__item item-hover">
-                <div class="features__img"><img src="img/features/6.png" alt="Features Image"></div>
+                <div class="features__img"><img src="img/features/6.svg" alt="Features Image"></div>
                 <h2 class="features__title">Опыт</h2>
                 <div class="features__text">
                   <p>Более 20 лет на рынке полиграфии, большинство сотрудников более 10лет работают в типографии, многие с основания типографии</p>
@@ -403,7 +403,7 @@
             <div class="orders">
               <div class="orders__step orders__step--big">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">1</div><img class="orders__img" src="img/order/1.png">
+                  <div class="orders__number">1</div><img class="orders__img" src="img/order/1.svg">
                 </div>
                 <div class="orders__text">
                   <p>Вы присылаете заявку на расчет</p>
@@ -411,7 +411,7 @@
               </div>
               <div class="orders__step orders__step--big">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">2</div><img class="orders__img" src="img/order/2.png">
+                  <div class="orders__number">2</div><img class="orders__img" src="img/order/2.svg">
                 </div>
                 <div class="orders__text">
                   <p>Мы составляем смету, предлагая Вам варианты решений</p>
@@ -419,7 +419,7 @@
               </div>
               <div class="orders__step orders__step--big">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">3</div><img class="orders__img" src="img/order/3.png">
+                  <div class="orders__number">3</div><img class="orders__img" src="img/order/3.svg">
                 </div>
                 <div class="orders__text">
                   <p>Вы утверждаете один из вариантов решений</p>
@@ -427,7 +427,7 @@
               </div>
               <div class="orders__step">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">4</div><img class="orders__img" src="img/order/4.png">
+                  <div class="orders__number">4</div><img class="orders__img" src="img/order/4.svg">
                 </div>
                 <div class="orders__text">
                   <p>Вы присылаете оригинал макет в печать</p>
@@ -435,7 +435,7 @@
               </div>
               <div class="orders__step">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">5</div><img class="orders__img" src="img/order/5.png">
+                  <div class="orders__number">5</div><img class="orders__img" src="img/order/5.svg">
                 </div>
                 <div class="orders__text">
                   <p>Вы оплачиваете заказ и утверждаете оригинал макет в печать </p>
@@ -443,7 +443,7 @@
               </div>
               <div class="orders__step">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">6</div><img class="orders__img" src="img/order/6.png">
+                  <div class="orders__number">6</div><img class="orders__img" src="img/order/6.svg">
                 </div>
                 <div class="orders__text">
                   <p>Мы изготавливаем заказ в установленный срок </p>
@@ -451,7 +451,7 @@
               </div>
               <div class="orders__step">
                 <div class="orders__item item-hover">
-                  <div class="orders__number">7</div><img class="orders__img" src="img/order/7.png">
+                  <div class="orders__number">7</div><img class="orders__img" src="img/order/7.svg">
                 </div>
                 <div class="orders__text">
                   <p>Мы доставляем Вам заказ или Вы забираете его самостоятельно</p>
@@ -536,9 +536,7 @@
             <!-- end socials -->
             <!-- begin copyright -->
             <div class="copyright">
-              <div class="copyright__line">© 2018</div>
-              <div class="copyright__line">Создание сайта: Волекс</div>
-              <div class="copyright__line">Результаты СОУТ</div>
+              <div class="copyright__line">© 2018</div><a class="copyright__link" href="www.volex.su">Создание сайта: Волекс</a><a class="copyright__link" href="textual-page.html">Результаты СОУТ</a>
             </div>
             <!-- end copyright -->
           </div>

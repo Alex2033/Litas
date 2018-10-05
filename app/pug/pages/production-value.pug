@@ -4,7 +4,9 @@ html(lang='ru')
     title Литас
     include ../modules/head
 
-  body
+  body.is-inner
+
+    .request-background
 
     // begin wrapper
     .wrapper
@@ -53,7 +55,7 @@ html(lang='ru')
               li.hidden-sidebar__item
                 a.hidden-sidebar__link(href="#") Воблеры
               li.hidden-sidebar__item
-                a.hidden-sidebar__link(href="#") Печать на конвертах
+                a.hidden-sidebar__link(href="#") Другое (Нестандартные проекты)
               
       // end sidebar-menu 
 
@@ -89,100 +91,100 @@ html(lang='ru')
               section.production-value 
                 // begin cards 
                 ul.cards.production-value__cards
-                  li.card.item-hover.production-value__item
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/1.png", alt="Production image")
                     h6.card__title Плакаты
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 10 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 400 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 10 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 400 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/2.png", alt="Production image")
                     h6.card__title Листовки
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 100 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 3018 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 100 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 3018 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/3.png", alt="Production image")
                     h6.card__title Буклеты
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 100 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 3113 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 100 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 3113 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/4.png", alt="Production image")
                     h6.card__title Брошюры
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 100 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 3018 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 100 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 3018 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/6.png", alt="Production image")
                     h6.card__title Календари
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 100 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 520 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 100 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 520 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/5.png", alt="Production image")
                     h6.card__title Папки
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 20 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 1800 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 20 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 1800 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/8.png", alt="Production image")
                     h6.card__title Упаковка
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 10 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 2000 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 10 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 2000 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/9.png", alt="Production image")
                     h6.card__title Хедеры
                       br 
                       |  шелфтокеры, воблеры
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 50 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 1000 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 50 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 1000 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
                       img(src="img/production/5.png", alt="Production image")
                     h6.card__title Блокноты
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 5 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 600 р.
-                  li.card.item-hover.production-value__item
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 5 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 600 р.
+                  a(href="#").card.item-hover.production-value__item
                     .card__img
-                      img(src="img/production/10.png", alt="Production image")
+                      img(src="img/production/10.svg", alt="Production image")
                     h6.card__title Другое
                       br
                       |  (Нестандартные проекты)
                     .card__text
-                      .card__text-line Тираж, от 
-                        a.card__link(href="#") 10 экз.
-                      .card__text-line Стоимость, от 
-                        a.card__link(href="#") 300 р.
+                      span.card__text-line Тираж, от 
+                        span.card__numbers 10 экз.
+                      span.card__text-line Стоимость, от 
+                        span.card__numbers 300 р.
                 // end cards 
               // end production-value  
 
