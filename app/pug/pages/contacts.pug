@@ -145,19 +145,29 @@ html(lang='ru')
                     h2.finding__title Как нас найти
 
                   .finding__set
-                    .finding__item(style="background-image: url(img/contacts-page/1.jpg);")
+                    .finding__item
+                      .finding__img
+                        img(src="img/contacts-page/1.jpg", alt="Contacts image")
                       .finding__body
-                        h3.finding__title
+                        h3.finding__item-title Для автомобиля
                         ul.finding__list
                           li.finding__list-item.
                             1) Проезжаем через грузовые ворота со шлагбаумом, говорим, что в Типографию Литас+.(нужно громко сказать "ЛИТАС ПЛЮС")
-                          li.finding__list-item
-                          li.finding__list-item
-                    .finding__item(style="background-image: url(img/contacts-page/2.jpg);")
+                          li.finding__list-item 2) Следуя  схеме проезда по территории находим нас.
+                          li.finding__list-item 3) На выезд потребуется пропуск, который мы Вам выдадим.
+                    .finding__item
+                      .finding__img
+                        img(src="img/contacts-page/2.jpg", alt="Contacts image")
                       .finding__body
-                        h3.finding__title
-                        ul.finding__list
-                    .finding__item.finding__item--big(style="background-image: url(img/contacts-page/3.jpg);")
+                        h3.finding__item-title Для пешехода
+                        .finding__text
+                          p
+                            | Пешеходы проходя на территорию, в Типографию Литас+ свободно, по фразе:
+                            br
+                            |  - "В Типографю Литас Плюс"
+                    .finding__item.finding__item--big
+                      .finding__img
+                        img(src="img/contacts-page/3.jpg", alt="Contacts image")
                     .finding__item(style="background-image: url(img/contacts-page/4.jpg);")
                     .finding__item(style="background-image: url(img/contacts-page/5.jpg);")
 

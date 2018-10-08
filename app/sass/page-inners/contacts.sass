@@ -76,18 +76,12 @@
     justify-content: space-between
 
 .finding__item
-    height: 0
-    padding-bottom: 50%
     width: calc(50% - 7px)
     margin-right: 7px
     margin-bottom: 7px
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: 90% 50%
 
 .finding__item--big
     width: calc(100% - 7px)
-
 
 .finding__map
     width: calc(62% - 7px)
@@ -140,3 +134,36 @@
 
 .finding__form-button
     border-radius: 30px
+
+.finding__item-title
+    text-transform: uppercase
+    font-family: $montserrat-b
+    margin-bottom: 15px
+    margin-top: 25px
+    font-size: 18px
+
+.finding__img
+    width: 100%
+    height: 460px
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    @media #{$_lg}
+        height: 375px
+
+    @media #{$_md}
+        height: 325px
+
+    @media #{$_xmd}
+        height: 340px
+    
+    @media #{$_sm}
+        height: initial
+        object-fit: contain
+
+.finding__list-item
+    &:not(:last-child)
+        margin-bottom: 15px
