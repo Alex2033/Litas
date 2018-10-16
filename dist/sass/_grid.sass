@@ -2,14 +2,14 @@ $xxs: "(min-width: 320px)"
 $_xxs: "(max-width: 375px)"
 $xs: "(min-width: 576px)"
 $_xs: "(max-width: 576px)"
-$sm: "(min-width: 767px)"
-$_sm: "(max-width: 767px)"
-$xmd: "(min-width: 992px)"
-$_xmd: "(max-width: 992px)"
-$md: "(min-width: 1170px)"
-$_md: "(max-width: 1170px)"
-$lg: "(min-width: 1280px)"
-$_lg: "(max-width: 1280px)"
+$sm: "(min-width: 767.1px)"
+$_sm: "(max-width: 767.1px)"
+$xmd: "(min-width: 992.1px)"
+$_xmd: "(max-width: 992.1px)"
+$md: "(min-width: 1170.1px)"
+$_md: "(max-width: 1170.1px)"
+$lg: "(min-width: 1279.1px)"
+$_lg: "(max-width: 1279.1px)"
 $xlg: "(min-width: 1500px)"
 
 $cols: 12
@@ -31,7 +31,8 @@ $col: 100% / $cols
   @media #{$md}
     width: 1170px
   @media #{$lg}
-    width: 1280px
+    width: 100%
+    max-width: 1280px
 
 =row-flex($align:space-between, $wrap:wrap)
   display: flex
